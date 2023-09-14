@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lisa</title>
+    <meta name="author" content="Min-ting Chuang/">
+    <meta name="description" content="This is the course assignment portal created by Min-ting Chuang for the course WDD 230 - Web Frontend Development.">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+    <title>Min-ting Chuang - WDD230 - Web Frontend Development</title>
 </head>
 <body>
-    ABCDE
+    <header>
+        <div id="header-content">
+            <img src="images/lisa-photo.png" alt="Lisa's photo">
+            <h1>Min-ting Chuang</h1>
+        </div>
+    </header>
+    <nav>
+        <div id="nav-container">
+            <a href="#">Home</a>
+            <a href="chamber/siteplan.html">Site Plan</a>
+            <a href="chamber/">Chamber</a>
+            <a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/14?lang=eng#p8" target="_blank">Scripture</a>
+        </div>
+    </nav>
+    <main>
+        <div id="course-name"><h2>Wdd 230: Web Frontend Development</h2></div>
+        <section class="card">
+            <div class="card-title">
+                <h3>Learning Activities</h3>
+            </div>
+            <div class="list">
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+        <section class="card">
+            <div class="card-title">
+                <h3>Information</h3>
+            </div>
+            <div class="list">
+                <p class="info-data">Place: </p>
+                <p class="info-data">Weather: </p>
+                <p class="info-data">Page Visits: </p>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div id="footer-box">
+            <p>&copy; <span id="year"></span> | Min-ting Chuang | Taiwan<img src="images/taiwan-flag.png" alt="Taiwan Flag"></p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
 </body>
 </html>

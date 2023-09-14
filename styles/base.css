@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: auto;
+    width: 600px;
+}
+#header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #98C1D9;
+    padding: 10px
+}
+#header-content img {
+    width: auto;
+    margin-right: 20px;
+}
+nav {
+    padding: 0;
+    margin: 0;
+}
+#nav-container {
+    display: block;
+    justify-content: center;
+    background-color: #EE6C4D;
+    margin: 0px;
+}
+
+#nav-container a {
+    display: block;
+    text-align: center;
+    padding: 5px;
+}
+#nav-container div {
+    text-align: center;
+    padding: 5px;
+}
+
+nav a:link {
+    color: #E0FBFC;
+    text-decoration: none;
+}
+
+nav a:visited {
+    color: #E0FBFC;
+}
+
+nav a:hover {
+    color: #293241;
+}
+
+main {
+    padding: 0;
+    margin: 0;
+}
+#course-name {
+    background-color: #E0FBFC;
+    padding: 10px;
+    margin-top: 0px;
+    text-align: center;
+}
+.card {
+    margin: auto;
+    margin-top: 10px;
+    width: 90%;
+    border: 1px solid #3D5A80;
+    border-radius: 10px;
+}
+.card-title {
+    background-color: #98C1D9;
+    display: block;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.list {
+    background-color: #E0FBFC;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 25px;
+}
+.list ul {
+    list-style-type: none;
+}
+
+.list ul a:link {
+    color: #EE6C4D;
+    text-decoration: none;
+}
+
+.list ul a:visited {
+    color: #EE6C4D
+}
+
+.list ul a:hover {
+    color: #293241;
+}
+
+.info-data {
+    text-align: center;
+}
+
+#footer-box {
+    background-color: #98C1D9;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+#footer-box img {
+    margin-left: 10px;
+    height: 30px;
+}
+
+#lastModified {
+    color: #3D5A80;
+}
