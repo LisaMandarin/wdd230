@@ -16,27 +16,25 @@ body {
     background-color: #98C1D9;
     padding: 10px
 }
-#header-content img {
+#header-content > img {
     width: auto;
     margin-right: 20px;
 }
 nav {
     padding: 0;
-    margin: 0;
-}
-#nav-container {
-    display: block;
+    margin: 0 auto;
+    display: flex;
     justify-content: center;
     background-color: #2a3e59;
     margin: 0px;
 }
 
-#nav-container a {
-    display: block;
-    text-align: center;
-    padding: 5px;
+nav ul {
+    list-style-type: none;
 }
-#nav-container div {
+
+nav a {
+    display: block;
     text-align: center;
     padding: 5px;
 }
@@ -120,4 +118,15 @@ main {
 
 #lastModified {
     color: black;
+}
+
+@media (min-width: 640px) {
+    nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    nav ul li {
+        flex: 1 1 auto;
+    }
 }
