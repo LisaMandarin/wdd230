@@ -27,7 +27,7 @@ nav {
 #nav-container {
     display: block;
     justify-content: center;
-    background-color: #EE6C4D;
+    background-color: #2a3e59;
     margin: 0px;
 }
 
@@ -42,7 +42,7 @@ nav {
 }
 
 nav a:link {
-    color: #E0FBFC;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -119,7 +119,7 @@ main {
 }
 
 #lastModified {
-    color: #3D5A80;
+    color: black;
 }
 @media screen and (max-width: 1200px) {
     body {
