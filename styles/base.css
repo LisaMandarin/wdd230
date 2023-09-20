@@ -7,7 +7,7 @@
 body {
     font-family: 'Playfair Display', serif;
     margin: auto;
-    width: 60%;
+    width: 640px;
 }
 #header-content {
     display: flex;
@@ -120,15 +120,4 @@ main {
 
 #lastModified {
     color: black;
-}
-@media screen and (max-width: 1200px) {
-    body {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    body {
-        width: 100%;
-    }
 }
