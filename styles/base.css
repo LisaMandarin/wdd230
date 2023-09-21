@@ -88,16 +88,16 @@ main {
 }
 
 .list ul a:link {
-    color: #EE6C4D;
+    color: #2a3e59;
     text-decoration: none;
 }
 
 .list ul a:visited {
-    color: #EE6C4D
+    color: #2a3e59
 }
 
 .list ul a:hover {
-    color: #293241;
+    color: #bba319;
 }
 
 .info-data {
