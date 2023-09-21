@@ -1,0 +1,112 @@
+body {
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Roboto Slab', serif;
+    background-color: #025083;
+    color: white;
+    padding: 0 10px;
+}
+
+h3 {
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    padding: 0 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 5px;
+}
+
+p {
+    padding: 10px;
+    line-height: 1.5;
+}
+
+a {
+    padding: 10px;
+    margin: 10px 0;
+}
+
+a:link {
+    text-decoration: none;
+    color: black
+}
+
+a:visited {
+    color: black
+}
+
+a:hover {
+    color: indianred;
+}
+
+/* phone or baseline views **************************/
+main {
+	max-width: 767px;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 1fr;
+	font-size: 0.8rem;
+}
+
+main section {
+	margin: 0.5rem;
+	border: 1px solid #005e91;
+	padding: 0 1rem;
+	background-color: #cadcf4;
+
+}
+
+/* Tablet Views ******************************/
+@media only screen and (min-width: 37.5em) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	main section:nth-child(2) {
+		display: block;
+	}
+
+	main section:nth-child(3) {
+		grid-column: span 2;
+	}
+
+	main section {
+		display: block;
+	}
+	main section img {
+		width: 100%;
+		height: auto;
+		/* border: 1px solid #bbb; */
+	}
+}
+
+/* Desktop Views ****************************/
+@media only screen and (min-width: 60em) {
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+        min-width: 90%;
+        margin: 0 auto;
+        box-sizing: border-box;
+	}
+	
+	/* This is unncessary !!! The flow is set and the template is set already */
+
+    main section:nth-child(1) {
+	  grid-column: 1/2;
+  }
+	main section:nth-child(2) {
+	  grid-column: 2/3;
+		grid-row: 1/2;
+  }
+	/*************************************/
+
+	main section:nth-child(3) {
+		grid-column: span 1;
+	}
+}
