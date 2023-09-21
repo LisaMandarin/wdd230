@@ -24,13 +24,19 @@ nav {
     padding: 0;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
     background-color: #2a3e59;
     margin: 0px;
 }
 
 nav ul {
     list-style-type: none;
+}
+
+nav li {
+    margin: 5px 0;
 }
 
 nav a {
@@ -123,10 +129,10 @@ main {
 @media (min-width: 640px) {
     nav ul {
         display: flex;
-        align-items: center;
-        justify-content: space-around;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
     nav ul li {
-        flex: 1 1 auto;
+        margin: 0 20px;
     }
 }
