@@ -28,7 +28,6 @@ nav {
     align-items: center;
     /* justify-content: center; */
     background-color: #2a3e59;
-    margin: 0px;
 }
 
 nav ul {
@@ -61,12 +60,24 @@ nav a:hover {
 main {
     padding: 0;
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
 }
+
 #course-name {
+    grid-row: 1/2;
     background-color: #E0FBFC;
     padding: 10px;
     margin-top: 0px;
     text-align: center;
+}
+
+main section:nth-child(1) {
+    grid-row: 2/3;
+}
+
+main section:nth-child(2) {
+    grid-row: 3/4;
 }
 .card {
     margin: auto;
