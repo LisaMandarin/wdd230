@@ -3,7 +3,14 @@ body {
 	font-family: 'Montserrat', sans-serif;
 }
 
-h2 {
+#title {
+	background-color: #025083;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+section h2 {
     font-family: 'Roboto Slab', serif;
     background-color: #025083;
     color: white;
