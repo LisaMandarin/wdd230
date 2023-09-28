@@ -20,28 +20,21 @@ body {
     width: auto;
     margin-right: 20px;
 }
-nav {
+
+.navigation {
+    list-style-type: none;
     padding: 0;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     background-color: #2a3e59;
 }
 
-nav ul {
-    list-style-type: none;
-}
+.navigation li{
+    /* margin: 5px 0; */
+    display: none;
 
-nav li {
-    margin: 5px 0;
-}
-
-nav a {
-    display: block;
-    text-align: center;
-    padding: 5px;
 }
 
 nav a:link {
@@ -55,7 +48,40 @@ nav a:visited {
 
 nav a:hover {
     color: #fafab4;
+    font-size: 1.25rem;
 }
+#menu {
+    font-size: 1.5rem;
+    border: 1px solid gray;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    color: #000;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+
+/* when the button is clicked -- the open class is toggle and accounted for here */
+.open li {
+    display: block;
+    width: 100%;
+}
+
+.open li a {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+
 
 main {
     padding: 0;
@@ -92,6 +118,15 @@ main section:nth-child(2) {
     text-align: center;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+}
+
+#map {
+    text-align: center;
+    margin-top: 10px;
+}
+
+iframe {
+    width: 90%;
 }
 
 .list {
@@ -138,12 +173,62 @@ main section:nth-child(2) {
 }
 
 @media (min-width: 640px) {
-    nav ul {
+    nav {
+        padding: 0;
+        margin: 0 auto;
+        background-color: #2a3e59;
+    }
+
+    /* nav a {
+        display: inline-block;
+        text-align: center;
+        padding: 5px;
+    } */
+
+    .navigation li{
+        display: inline-block;
+        /* flex-direction: row; */
+        /* list-style-type: none; */
+        color: white;
+        margin: 0 auto;
+        padding: 5px;
+        /* justify-content: center; */
+    }
+
+    .navigation {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 auto;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        align-items: center;
+        background-color: #2a3e59;
     }
-    nav ul li {
-        margin: 0 20px;
+
+    #menu {
+        display: none;
+    }
+
+    main {
+        padding: 0;
+        margin: 0;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    
+    #course-name {
+        grid-column: span 2;
+    }
+    
+    main section:nth-child(1) {
+        grid-row: 2/3;
+    }
+    
+    main section:nth-child(2) {
+        grid-row: 2/3;
+    }
+
+    #map {
+        grid-column: span 2;
     }
 }
