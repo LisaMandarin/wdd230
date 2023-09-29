@@ -19,11 +19,9 @@
     <title>Min-ting Chuang - WDD230 - Web Frontend Development</title>
 </head>
 <body>
-    <header>
-        <div id="header-content">
+    <header id="header-content">
             <img src="images/lisa-photo.png" alt="Lisa's photo">
             <h1>Min-ting Chuang</h1>
-        </div>
     </header>
     <nav>
         <button id="menu"></button>            
@@ -37,7 +35,7 @@
     </nav>
     <main>
         <div id="course-name"><h2>WDD 230: Web Frontend Development</h2></div>
-        <section class="card">
+        <section class="card" id="learning-activities">
             <div class="card-title">
                 <h3>Learning Activities</h3>
             </div>
@@ -45,11 +43,11 @@
                 <ul>
                     <li>01: <a href="lesson01/holygrail.html">CSS Layout Review</a></li>
                     <li>02: <a href="lesson02/design.html">Web Design Principles</a> | <a href="lesson01/media-query.html">CSS Media Queries</a> | <a href="lesson02/design-principles.html">Design Principles</a></li>
-                    <li>03: <a href="images/CSS-combinator.png">Combinators</a> | <a href="https://codepen.io/Lisa-Chuang/pen/BavxMWW">Pseudo-element</a> | <a href="https://codepen.io/Lisa-Chuang/pen/MWZGLLZ">Responsive Menu</a></li>
+                    <li>03: <a href="images/CSS-combinator.png">Combinators</a> | <a href="https://codepen.io/Lisa-Chuang/pen/BavxMWW">Pseudo-element</a> | <a href="https://codepen.io/Lisa-Chuang/pen/MWZGLLZ">Responsive Menu</a> | <a href="lesson03/chamber-site-plan.html">Chamber of Commerce Site Plan</a></li>
                 </ul>
             </div>
         </section>
-        <section class="card">
+        <section class="card" id="information">
             <div class="card-title">
                 <h3>Information</h3>
             </div>
@@ -64,11 +62,9 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29449.91554293455!2d120.26737989185759!3d22.682128682459854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e05a291f5e195%3A0xec57a75daa88fcde!2sZuoying%20District%2C%20Kaohsiung%20City%2C%20813!5e0!3m2!1sen!2stw!4v1695843528042!5m2!1sen!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
-    <footer>
-        <div id="footer-box">
+    <footer id="footer-box">
             <p>&copy; <span id="year"></span> | Min-ting Chuang | Taiwan<img src="images/taiwan-flag.png" alt="Taiwan Flag"></p>
             <p id="lastModified"></p>
-        </div>
     </footer>
     <script src="scripts/getdates.js"></script>
 </body>

@@ -17,7 +17,7 @@ body {
     padding: 10px
 }
 #header-content > img {
-    width: auto;
+    width: 65px;
     margin-right: 20px;
 }
 
@@ -32,7 +32,6 @@ body {
 }
 
 .navigation li{
-    /* margin: 5px 0; */
     display: none;
 
 }
@@ -88,6 +87,7 @@ main {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto;
 }
 
 #course-name {
@@ -98,11 +98,11 @@ main {
     text-align: center;
 }
 
-main section:nth-child(1) {
+#learning-activities {
     grid-row: 2/3;
 }
 
-main section:nth-child(2) {
+#information {
     grid-row: 3/4;
 }
 .card {
@@ -123,6 +123,7 @@ main section:nth-child(2) {
 #map {
     text-align: center;
     margin-top: 10px;
+    grid-row: 4/5;
 }
 
 iframe {
@@ -179,20 +180,11 @@ iframe {
         background-color: #2a3e59;
     }
 
-    /* nav a {
-        display: inline-block;
-        text-align: center;
-        padding: 5px;
-    } */
-
     .navigation li{
         display: inline-block;
-        /* flex-direction: row; */
-        /* list-style-type: none; */
         color: white;
         margin: 0 auto;
         padding: 5px;
-        /* justify-content: center; */
     }
 
     .navigation {
@@ -220,11 +212,11 @@ iframe {
         grid-column: span 2;
     }
     
-    main section:nth-child(1) {
+    #learning-activities {
         grid-row: 2/3;
     }
     
-    main section:nth-child(2) {
+    #information {
         grid-row: 2/3;
     }
 
