@@ -21,6 +21,7 @@ body {
 }
 #header-content > img {
     max-width: 65px;
+    height: auto;
     aspect-ratio: auto;
     margin-right: 20px;
 }
@@ -171,6 +172,7 @@ iframe {
 #footer-box img {
     margin-left: 10px;
     height: 30px;
+    width: auto;
     aspect-ratio: auto;
 }
 
