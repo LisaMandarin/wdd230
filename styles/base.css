@@ -17,7 +17,8 @@ body {
     padding: 10px
 }
 #header-content > img {
-    width: 65px;
+    max-width: 65px;
+    aspect-ratio: auto;
     margin-right: 20px;
 }
 
@@ -167,6 +168,7 @@ iframe {
 #footer-box img {
     margin-left: 10px;
     height: 30px;
+    aspect-ratio: auto;
 }
 
 #lastModified {
