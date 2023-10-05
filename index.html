@@ -9,6 +9,9 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lisamandarin.github.io/wdd230/">
     <meta property="og:image" content="https://lisamandarin.github.io/wdd230/images/lotus-pond.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bevan&family=Playfair+Display&display=swap');
+    </style>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/large.css">
@@ -17,7 +20,8 @@
 </head>
 <body>
     <header id="header-content">
-            <img src="images/lisa-photo.png" alt="Lisa's photo">
+        <img src="images/lisa-photo.webp" alt="Lisa's Photo">
+            <!-- <img src="images/lisa-photo.png" srcset="images/lisa-photo-65w.png 65w" sizes="(min-width: 640px) 64px, (max-width: 640px) 64px, 64px" alt="Lisa's photo"> -->
             <h1>Min-ting Chuang</h1>
     </header>
     <nav>
@@ -57,11 +61,11 @@
             
         </section>
         <div id="map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29449.91554293455!2d120.26737989185759!3d22.682128682459854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e05a291f5e195%3A0xec57a75daa88fcde!2sZuoying%20District%2C%20Kaohsiung%20City%2C%20813!5e0!3m2!1sen!2stw!4v1695843528042!5m2!1sen!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" width="300" height="300"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29449.91554293455!2d120.26737989185759!3d22.682128682459854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e05a291f5e195%3A0xec57a75daa88fcde!2sZuoying%20District%2C%20Kaohsiung%20City%2C%20813!5e0!3m2!1sen!2stw!4v1695843528042!5m2!1sen!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </main>
     <footer id="footer-box">
-            <p>&copy; <span id="year"></span> | Min-ting Chuang | Taiwan<img src="images/taiwan-flag.png" alt="Taiwan Flag"></p>
+            <p>&copy; <span id="year"></span> | Min-ting Chuang | Taiwan<img src="images/taiwan-flag.png" alt="Taiwan Flag" width="20" height="30"></p>
             <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
