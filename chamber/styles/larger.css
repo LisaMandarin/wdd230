@@ -1,0 +1,51 @@
+@media (min-width: 640px) {
+    .navigation {
+        flex-direction: row;
+        margin: 0 auto;
+        box-sizing: border-box;
+        justify-content: space-around;
+        /* background-color: var(--color-orange); */
+    }
+    
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+        padding: 0;
+        color: var(--color-dark-blue);
+        background-color: var(--color-orange);
+        text-align: center;
+        font-family: var(--font2);
+        font-weight: bold;
+        gap: 0;
+    }
+    
+    #menu {
+        display: none;
+    }
+
+    #container {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, auto);
+        grid-column-gap: 5px;
+        grid-template-areas: 
+            "hero hero hero hero event event"
+            "weather weather weather spotlight spotlight spotlight";
+    }
+
+    #hero {
+        grid-area: hero;
+    }
+
+    #event {
+        grid-area: event;
+    }
+
+    #weather {
+        grid-area: weather;
+    }
+
+    #spotlights {
+        grid-area: spotlight;
+    }
+}
+

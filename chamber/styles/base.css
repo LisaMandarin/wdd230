@@ -1,0 +1,193 @@
+:root {
+    --font1: 'Bevan', serif;
+    --font2: 'Playfair Display', serif;
+    --color-orange: #EF8354;
+    --color-dark-blue: #2D3142;
+    --color-navy-blue: #4F5D75;
+    --color-grey: #BFC0C0;
+    --color-white: #FFFFFF;
+}
+/* --------------------------------------------------------------- */
+
+/* basic setting */
+body {
+    font-family: var(--font2);
+    color: var(--color-dark-blue);
+    background-color: var(--color-white);
+    min-width: 390px;
+}
+
+h1, h2 {
+    font-family: var(--font1);
+}
+
+/* --------------------------------------------------------------- */
+
+/* header setting */
+#headerContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#headerContainer img {
+    display: block;
+    max-width: 300px;
+    height: auto;
+    aspect-ratio: auto;
+}
+
+#headerContainer h1 {
+    display: block;
+    align-self:self-end;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+/* --------------------------------------------------------------- */
+
+/* navigation and menu setting */
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation li a {
+    display: block;
+    padding: 10px;
+    margin: 0;
+    color:var(--color-dark-blue);
+    text-decoration: none;
+}
+
+.navigation li a:link {
+    color:var(--color-dark-blue);
+}
+
+.navigation li a:visited {
+    color:var(--color-dark-blue);
+}
+
+.navigation li a:hover {
+    color:var(--color-orange);
+    background-color: var(--color-dark-blue);
+}
+
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2rem;
+    border: var(--color-grey);
+    padding: 0.5rem 0.5rem;
+    background-color: var(--color-grey);
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+}
+
+/* when menu button is clicked, open class is toggled */
+.open li {
+    display: block;
+    padding: 0;
+    color: var(--color-dark-blue);
+    background-color: var(--color-orange);
+    text-align: center;
+    font-family: var(--font2);
+    font-weight: bold;
+}
+
+/* --------------------------------------------------------------- */
+
+/* main content setting */
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#container .card {
+    border: 1px solid var(--color-navy-blue);
+    background-color: #BFC0C0;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#container #hero {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: var(--color-white);
+}
+
+#hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#join {
+    display: block;
+    background-color: var(--color-orange);
+    color: var(--color-dark-blue);
+    font-family: var(--font1);
+    font-weight: bolder;
+    border: 3px double var(--color-navy-blue);
+    width: 100px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+}
+
+.card h2 {
+    display: block;
+    background-color: var(--color-dark-blue);
+    color: var(--color-orange);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.card p {
+    display: block;
+    margin: 0;
+    padding: 1rem;
+}
+
+/* --------------------------------------------------------------- */
+
+/* footer setting */
+#mobile-view-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+footer .text {
+    display: block;
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    background-color: var(--color-orange);
+    text-align: center;
+
+}

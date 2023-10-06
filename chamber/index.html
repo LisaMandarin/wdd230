@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Min-ting Chuang">
+    <meta name="description" content="This is the homepage of Kaohsiung Chamber of Commerce">
+    <meta property="og:title" content="Kaohsiung Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lisamandarin.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://lisamandarin.github.io/wdd230/chamber/images/KCC-logo320.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <title>Kaohsiung Chamber of Commerce</title>
+</head>
+<body>
+    <header id="headerContainer">
+        <img src="images/logo.png" alt="logo of Kaohsiung">
+        <h1>Kaohsiung Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="menu" aria-label="menu button"></button>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Explore Members</a></li>
+            <li><a href="#">Announcement</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Join Us</a></li>
+        </ul>
+    </nav>
+    <main id="container">
+        <div class="card" id="hero">
+            <img src="images/hero.png" alt="Come join us">
+            <button id="join" type="button" aria-label="join-button">Join Us</button>
+        </div>
+        <div class="card" id="event">
+            <h2>Event</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi culpa minima, sunt nostrum, soluta cupiditate facere laborum, repudiandae recusandae nesciunt animi! Consequuntur pariatur asperiores modi voluptate accusamus similique accusantium nemo, cum delectus. Veniam sunt aut corrupti soluta nam recusandae quo molestiae tenetur temporibus. Nemo pariatur aut, labore nulla quod facere nisi ab recusandae, sed quasi ea omnis accusantium, dolor iure!</p>
+        </div>
+        <div class="card" id="weather">
+            <h2>Weather</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, asperiores.</p>
+        </div>
+        <div class="card" id="spotlights">
+            <h2>Member Spotlights</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus magni est molestias earum aliquid. Optio amet molestias cumque, excepturi sit consectetur saepe nemo tempore at quaerat, illum aspernatur voluptatum! Reprehenderit cumque dignissimos vitae fuga quod maiores repudiandae asperiores facilis optio!</p>
+        </div>
+    </main>
+    <footer>
+        <div id="mobile-view-footer">
+            <p class="text" id="copyright">&copy;<span id="year"></span> Kaohsiung Chamber of Commerce</p>
+            <p class="text" id="name">Min-ting Chuang</p>
+            <p class="text" id="course">WDD 230 Project</p>
+            <p class="text" id="lastModified"></p>
+        </div>
+        <div id="larger-view-footer"></div>
+    </footer>
+    <script src="scripts/getdate.js"></script>
+    <script src="scripts/ham-menu.js"></script>
+</body>
+</html>

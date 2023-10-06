@@ -230,3 +230,9 @@ iframe {
         grid-column: span 2;
     }
 }
+
+@media screen and (max-width: 640px) {
+    body {
+        width: 100%;
+    }
+}

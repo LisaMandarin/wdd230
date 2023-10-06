@@ -14,18 +14,16 @@
     </style>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/large.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <title>Min-ting Chuang - WDD230 - Web Frontend Development</title>
 </head>
 <body>
     <header id="header-content">
         <img src="images/lisa-photo.webp" alt="Lisa's Photo">
-            <!-- <img src="images/lisa-photo.png" srcset="images/lisa-photo-65w.png 65w" sizes="(min-width: 640px) 64px, (max-width: 640px) 64px, 64px" alt="Lisa's photo"> -->
             <h1>Min-ting Chuang</h1>
     </header>
     <nav>
-        <button id="menu"></button>            
+        <button id="menu" type="menu" aria-label="menu"></button>            
         <ul class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
@@ -69,5 +67,6 @@
             <p id="lastModified"></p>
     </footer>
     <script src="scripts/getdates.js"></script>
+    <script src="scripts/ham-menu.js"></script>
 </body>
 </html>
