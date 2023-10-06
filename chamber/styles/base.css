@@ -88,17 +88,19 @@ h1, h2 {
     top: 1rem;
     right: 1rem;
     font-size: 2rem;
-    border: var(--color-grey);
-    padding: 0.5rem 0.5rem;
-    background-color: var(--color-grey);
+    border: 1px solid var(--color-navy-blue);
+    padding: 0 0.5rem;
+    background-color: var(--color-orange);
 }
 
 #menu::before {
     content: "☰";
+    color: var(--color-white);
 }
 
 #menu.open::before {
     content: "✕";
+    color: var(--color-white)
 }
 
 /* when menu button is clicked, open class is toggled */
