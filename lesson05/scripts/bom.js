@@ -9,6 +9,7 @@ btn.addEventListener('click', () => {
         li.textContent = input.value;
         const deleteButton = document.createElement('button');
         deleteButton.textContent = '❌';
+        deleteButton.setAttribute('aria-label', 'Close');
         li.append(deleteButton);
 
         deleteButton.addEventListener('click', () => {
