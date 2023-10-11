@@ -1,0 +1,42 @@
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* animation-name: square; */
+    /* animation-duration: 4s; */
+    position:relative;
+    /* animation-delay: -2s; */
+    /* animation-iteration-count: infinite; */
+    /* animation-direction: alternate-reverse; */
+    animation: square 4s infinite;
+}
+
+/* @keyframes square {
+    from {background-color: red;}
+    to {background-color: yellow;}
+} */
+
+/* @keyframes square {
+    0% {background-color: red;}
+    50% {background-color: orange;}
+    75% {background-color: yellow;}
+    100% {background-color: yellowgreen;}
+} */
+
+/* @keyframes square {
+    0% {background-color: red; left: 0px; top: 0px;}
+    25% {background-color: orange; left:50px; top: 0px;}
+    50% {background-color: yellow; left: 50px; top: 50px;}
+    75% {background-color: yellowgreen; left: 0px; top: 50px;}
+    100% {background-color: aqua; left: 0px; top: 0px;}
+} */
+
+#div1 {animation-timing-function: ease;}
+#div2 {animation-timing-function: linear;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-in-out;}
+
+@keyframes square {
+    from {left: 0px}
+    to {left: 300px}
+}
