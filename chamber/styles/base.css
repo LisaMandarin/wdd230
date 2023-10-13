@@ -5,6 +5,7 @@
     --color-dark-blue: #2D3142;
     --color-navy-blue: #4F5D75;
     --color-grey: #BFC0C0;
+    --color-light-grey: #f8f8f8;
     --color-white: #FFFFFF;
 }
 /* --------------------------------------------------------------- */
@@ -19,6 +20,17 @@ body {
 
 h1, h2 {
     font-family: var(--font1);
+}
+
+/* --------------------------------------------------------------- */
+
+/* dark mode setting */
+#mode {
+    position: absolute;
+    top: 1rem;
+    right: 5rem;
+    font-size: 3rem;
+    cursor: pointer;
 }
 
 /* --------------------------------------------------------------- */
@@ -128,7 +140,7 @@ h1, h2 {
 
 #container .card {
     border: 1px solid var(--color-navy-blue);
-    background-color: #BFC0C0;
+    background-color: var(--color-light-grey);
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
@@ -179,9 +191,46 @@ h1, h2 {
 /* --------------------------------------------------------------- */
 
 /* footer setting */
-#mobile-view-footer {
-    display: flex;
-    flex-direction: column;
+#chamber-info {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+#chamber-info img {
+    display: block;
+    width: 70px;
+    height: auto;
+    aspect-ratio: 1/1;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    align-self: center;
+    justify-self: right;
+    margin: 0;
+}
+
+#chamber-info h2 {
+    grid-column: 2/3;
+    grid-row:1/2;
+    padding-left: 5px;
+    align-self: center;
+}
+
+#chamber-info p {
+    margin: 0;
+    padding-top: 5px;
+    align-self: center;
+    justify-self: center;
+}
+
+#address {
+    grid-column: 1/3;
+    grid-row: 2/3;
+}
+
+#telephone {
+    grid-column: 1/3;
+    grid-row: 3/4;
 }
 
 footer .text {

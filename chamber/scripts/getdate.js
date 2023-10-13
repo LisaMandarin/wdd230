@@ -4,6 +4,6 @@ var yearElement = document.getElementById('year');
 yearElement.textContent = year;
 
 // get modification time
-var dateTime = document.lastModified;
+var dateTime = new Date(document.lastModified);
 var dateTimeElement = document.getElementById('lastModified');
-dateTimeElement.textContent = "Last Modification: " + dateTime;
+dateTimeElement.textContent = " | Last Modification: " + dateTime;
