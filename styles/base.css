@@ -8,7 +8,7 @@
 body {
     font-family: 'Playfair Display', serif;
     margin: auto;
-    width: 640px;
+    width: 80%;
 }
 #header-content {
     display: flex;
@@ -90,11 +90,40 @@ main {
     margin: 0;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    grid-row:1/2;
+}
+
+.hero-label {
+    position: absolute;
+    top: 150px;
+    left: 180px;
+    background-color: #ffffff;
+    padding: 10px;
+    color:#3D5A80;
+    font-family: 'Bevan';
+    border-radius: 10px;
+    opacity: 0.75;
+    box-sizing: border-box;
+    box-shadow: 0 0 3rem #000;
+    width: auto;
+    font-size: 1.5rem;
 }
 
 #course-name {
-    grid-row: 1/2;
+    grid-row: 2/3;
     background-color: #E0FBFC;
     padding: 10px;
     margin-top: 0px;
@@ -102,11 +131,11 @@ main {
 }
 
 #learning-activities {
-    grid-row: 2/3;
+    grid-row: 3/4;
 }
 
 #information {
-    grid-row: 3/4;
+    grid-row: 4/5;
 }
 .card {
     margin: auto;
@@ -126,7 +155,7 @@ main {
 #map {
     text-align: center;
     margin-top: 10px;
-    grid-row: 4/5;
+    grid-row: 5/6;
 }
 
 iframe {
@@ -179,7 +208,7 @@ iframe {
     color: black;
 }
 
-@media (min-width: 640px) {
+@media (min-width: 401px) {
     nav {
         padding: 0;
         margin: 0 auto;
@@ -214,16 +243,21 @@ iframe {
         grid-template-columns: auto auto;
     }
     
+    .hero {
+        grid-column: span 2;
+    }
     #course-name {
         grid-column: span 2;
     }
     
     #learning-activities {
-        grid-row: 2/3;
+        grid-column: 1/2;
+        grid-row: 3/4;
     }
     
     #information {
-        grid-row: 2/3;
+        grid-column: 2/3;
+        grid-row: 3/4;
     }
 
     #map {
@@ -231,7 +265,7 @@ iframe {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 400px) {
     body {
         width: 100%;
     }
