@@ -36,6 +36,13 @@
     .hero {
         grid-column: span 2;
     }
+
+    .hero-label {
+        top: 150px;
+        left: 180px;
+    }
+
+
     #course-name {
         grid-column: span 2;
     }
