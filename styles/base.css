@@ -208,63 +208,6 @@ footer img {
     color: black;
 }
 
-@media (min-width: 641px) {
-    nav {
-        padding: 0;
-        margin: 0 auto;
-        background-color: #2a3e59;
-    }
-
-    .navigation li{
-        display: inline-block;
-        color: white;
-        margin: 0 auto;
-        padding: 5px;
-    }
-
-    .navigation {
-        list-style-type: none;
-        padding: 0;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        background-color: #2a3e59;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    main {
-        padding: 0;
-        margin: 0;
-        display: grid;
-        grid-template-columns: auto auto;
-    }
-    
-    .hero {
-        grid-column: span 2;
-    }
-    #course-name {
-        grid-column: span 2;
-    }
-    
-    #learning-activities {
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-    
-    #information {
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-
-    #map {
-        grid-column: span 2;
-    }
-}
-
 @media screen and (max-width: 640px) {
     body {
         width: 100%;
