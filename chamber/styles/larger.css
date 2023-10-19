@@ -1,4 +1,4 @@
-@media (min-width: 900px) {
+@media (min-width: 800px) {
     .navigation {
         flex-direction: row;
         margin: 0 auto;
@@ -34,6 +34,12 @@
 
     #hero {
         grid-area: hero;
+    }
+
+    #join {
+        position: absolute;
+        top: 250px;
+        left: 350px;
     }
 
     #event {

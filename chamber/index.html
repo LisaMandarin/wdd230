@@ -24,7 +24,7 @@
         🕶️
     </div>
     <header id="headerContainer">
-        <img src="images/logo.png" alt="logo of Kaohsiung">
+        <img src="images/logo.webp" alt="logo of Kaohsiung">
         <h1>Kaohsiung Chamber of Commerce</h1>
     </header>
     <nav>
@@ -40,7 +40,16 @@
     </nav>
     <main id="container">
         <div class="card" id="hero">
-            <img src="images/hero.png" alt="Come join us">
+            <picture>
+                <source media="(max-width: 400px)" srcset="images/wdd230-small.webp">
+                <source media="(max-width: 800px)" srcset="images/wdd230-medium.webp">
+                <img src="images/wdd230-large.webp" alt="Come join us" width="1500" height="1000">
+            </picture>
+            <!-- <picture>
+                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
+                <source media="(max-width: 800px)" srcset="images/hero-medium.webp">
+                <img src="images/hero-large.webp" alt="Come join us" width="1000" height="666">
+            </picture> -->
             <button id="join" type="button" aria-label="join-button">Join Us</button>
         </div>
         <div class="card" id="event">
@@ -49,7 +58,7 @@
         </div>
         <div class="card" id="weather">
             <h2>Weather</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, asperiores.</p>
+            <p><span id="windchill"></span></p>
         </div>
         <div class="card" id="spotlights">
             <h2>Member Spotlights</h2>
@@ -58,7 +67,7 @@
     </main>
     <footer>
         <div id="chamber-info">
-            <img src="images/logo.png" alt="logo">
+            <img src="images/logo.webp" alt="logo">
             <h2>Kaohsiung Chamber of Commerce</h2>
             <p id="address">110 Renren Rd. Jinfu District, Kaohsiung, Taiwan, R.O.C. 52314</p>
             <p id="telephone">+(886)7-215-7834</p>
@@ -73,5 +82,6 @@
     <script src="scripts/getdate.js"></script>
     <script src="scripts/ham-menu.js"></script>
     <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>

@@ -47,9 +47,9 @@ h1, h2 {
 
 #headerContainer img {
     display: block;
-    max-width: 300px;
-    height: auto;
-    aspect-ratio: auto;
+    max-width: 100px;
+    max-height: 100px;
+    aspect-ratio: 1/1;
 }
 
 #headerContainer h1 {
@@ -166,11 +166,16 @@ h1, h2 {
     font-family: var(--font1);
     font-weight: bolder;
     border: 3px double var(--color-navy-blue);
+    border-radius: 20px;
     width: 100px;
     height: 50px;
     padding: 0;
     margin: 0;
     align-self: center;
+    position: absolute;
+    top: 250px;
+    left:150px;
+    opacity: 0.8;
 }
 
 .card h2 {
