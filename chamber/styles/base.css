@@ -328,4 +328,13 @@ footer .text {
 #photo-gallery img {
     width: 100%;
     height: auto;
+    border: 5px solid transparent;
+    box-shadow: 0 4px 8px rgb(0, 0, 0);
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-sizing: border-box;
+}
+
+#photo-gallery img:hover {
+    border-color: var(--color-orange);
+    box-shadow: 0 8px 16px rgb(0, 0, 0);
 }
