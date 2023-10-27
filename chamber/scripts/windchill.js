@@ -11,8 +11,8 @@ function windChillFormula(temp, windspeed) {
 const temperature = document.querySelector('#temperature');
 const windSpeed = document.querySelector('#wind-speed')
 
-temperature.textContent = "Temperature: " + t;
-windSpeed.textContent = "Wind Speed: " + v;
+temperature.textContent = "Temperature: " + t + " °F";
+windSpeed.textContent = "Wind Speed: " + v + " mph";
 
 if (floatT > 51 || floatV <= 3) {
     windChill.textContent = "Wind Chill: " + "N/A";
