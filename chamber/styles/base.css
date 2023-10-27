@@ -1,4 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Bevan&family=Playfair+Display&family=Playfair:opsz,wght@5..1200,300;5..1200,700;5..1200,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bevan&family=Playfair+Display&family=Playfair:opsz,wght@5..1200,300;5..1200,700;5..1200,900&display=swap');
 
 :root {
     --font1: 'Bevan', serif;
@@ -65,15 +65,18 @@ h1, h2 {
 
 /* navigation and menu setting */
 
+@media (max-width: 799px) {
+    .navigation {
+        flex-direction: column;
+    }
+    .navigation li {
+        display: none;
+    }
+}
 .navigation {
     display: flex;
-    flex-direction: column;
     list-style-type: none;
     padding: 0;
-}
-
-.navigation li {
-    display: none;
 }
 
 .navigation li a {
@@ -131,11 +134,57 @@ h1, h2 {
 /* --------------------------------------------------------------- */
 
 /* main content setting */
+@media (max-width: 799px) {
+    #container {
+        grid-template-columns: 1fr;
+        grid-row-gap: 1rem;
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    #container #hero {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #join {
+        position: absolute;
+        top: 250px;
+        left:150px;
+    }
+
+    #chamber-info {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    #chamber-info img {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #chamber-info h2 {
+        grid-column: 2/3;
+        grid-row:1/2;
+    }
+
+    #address {
+        grid-column: 1/3;
+        grid-row: 2/3;
+    }
+    
+    #telephone {
+        grid-column: 1/3;
+        grid-row: 3/4;
+    }
+
+    #discover-container {
+        grid-template-columns: 1fr;
+    }
+}
 #container {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-row-gap: 1rem;
-    width: 90%;
     margin: 0 auto;
     margin-bottom: 10px;
 }
@@ -149,8 +198,6 @@ h1, h2 {
 }
 
 #container #hero {
-    display: flex;
-    flex-direction: column;
     border: none;
     background-color: var(--color-white);
 }
@@ -174,9 +221,6 @@ h1, h2 {
     padding: 0;
     margin: 0;
     align-self: center;
-    position: absolute;
-    top: 250px;
-    left:150px;
     opacity: 0.8;
 }
 
@@ -198,27 +242,18 @@ h1, h2 {
 /* --------------------------------------------------------------- */
 
 /* footer setting */
-#chamber-info {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto auto;
-}
 
 #chamber-info img {
     display: block;
     width: 70px;
     height: auto;
     aspect-ratio: 1/1;
-    grid-column: 1/2;
-    grid-row: 1/2;
     align-self: center;
     justify-self: right;
     margin: 0;
 }
 
 #chamber-info h2 {
-    grid-column: 2/3;
-    grid-row:1/2;
     padding-left: 5px;
     align-self: center;
 }
@@ -228,16 +263,6 @@ h1, h2 {
     padding-top: 5px;
     align-self: center;
     justify-self: center;
-}
-
-#address {
-    grid-column: 1/3;
-    grid-row: 2/3;
-}
-
-#telephone {
-    grid-column: 1/3;
-    grid-row: 3/4;
 }
 
 footer .text {
@@ -255,7 +280,6 @@ footer .text {
 /* discover.html setting */
 #discover-container {
     display: grid;
-    grid-template-columns: 1fr;
     grid-row-gap: 1rem;
     width: 90%;
     margin: 0 auto;
