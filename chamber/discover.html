@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Min-ting Chuang">
+    <meta name="description" content="This is the homepage of Kaohsiung Chamber of Commerce">
+    <meta property="og:title" content="Kaohsiung Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lisamandarin.github.io/wdd230/chamber">
+    <meta property="og:image" content="https://lisamandarin.github.io/wdd230/chamber/images/kcc-logo320.png">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Kaohsiung Chamber of Commerce</title>
+</head>
+<body>
+    <div id="mode">
+        🕶️
+    </div>
+    <header id="headerContainer">
+        <img src="images/logo.webp" alt="logo of Kaohsiung">
+        <h1>Kaohsiung Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="menu" aria-label="menu button"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Explore Members</a></li>
+            <li><a href="#">Announcement</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Join Us</a></li>
+        </ul>
+    </nav>
+    <main id="discover-container">
+        <div id="side-bar">
+            <div class="discover-card">
+                <h2>Greetings</h2>
+                <p><span class="discover-label">Today is </span><span id="discover-today"></span></p>
+                <p><span class="discover-label">Last visit is </span><span id="discover-lastTime"></span></p>
+                <p><span id="discover-welcomeMessage"></span></p>
+            </div>
+            <div class="discover-card">
+                <h2>Statistical Data</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit dolor esse beatae ipsum, consequatur corrupti soluta amet et facere fugiat commodi, velit adipisci mollitia accusantium nostrum. Magnam ipsum explicabo labore deserunt quis similique non doloremque cum. Nihil excepturi deleniti accusantium asperiores dolor officiis odit velit consectetur. Corrupti quod itaque magni, odit quia quos? Qui adipisci quisquam possimus! Ea corporis culpa ratione laborum animi deserunt ex quasi! Cumque expedita atque sed aut ea provident fuga natus perferendis dignissimos officia porro deleniti dicta, itaque architecto. Eum voluptatibus quam molestias, quae voluptatum id blanditiis fugit, laboriosam officiis, debitis temporibus est possimus eos vero?    </p>
+            </div>
+            <div class="discover-card">
+                <h2>Events</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam porro accusamus quos dolorem nihil at aut magni, accusantium ducimus saepe optio? Similique, perspiciatis, ut consectetur dignissimos omnis quia sapiente eius cupiditate esse tempore exercitationem ipsa cumque expedita. Distinctio debitis aperiam minima iusto. Vitae, maiores officiis eligendi aliquid magnam laborum aliquam asperiores, architecto quis minima debitis placeat neque, inventore expedita repellat. Esse facilis nulla, tempora harum aliquid quibusdam placeat ipsam cum repellendus corporis quia aperiam error, voluptates excepturi voluptate suscipit molestias eveniet id officiis, porro maiores accusamus. Nihil eaque quasi at dicta hic aut ex quas deleniti sit blanditiis, facilis adipisci.    </p>
+            </div>
+            <div class="discover-card">
+                <h2>Attractions</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores rerum molestiae ipsam eos omnis consectetur architecto veritatis libero? Et deleniti ullam eligendi amet dolorum illum nam quibusdam. Praesentium veritatis fuga voluptatibus dolor. Eaque quod maxime veniam optio eligendi quaerat. Temporibus possimus minima deserunt nostrum unde, alias doloremque est porro, perspiciatis architecto modi saepe ut tempora ea eveniet provident maiores! Nostrum, voluptatibus voluptates deserunt facere odio ad ipsam accusamus magnam error eaque non ullam modi nulla esse eum rerum facilis beatae explicabo accusantium cum nisi recusandae molestiae aperiam! Asperiores, voluptate. Neque soluta, suscipit pariatur dolores sunt repudiandae magni nobis eum nostrum.    </p>
+            </div>
+            <div class="discover-card">
+                <h2>Calendar</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem quaerat hic ipsam provident beatae dignissimos alias dolore, earum exercitationem nam deserunt inventore perspiciatis fugiat optio atque. Doloribus veritatis, officia vero similique laborum dolor fuga aspernatur dolorem ipsam porro nemo et earum molestias nobis repellendus, dolore placeat quo nihil asperiores cupiditate nam mollitia? Minima cupiditate adipisci quas laborum pariatur. Asperiores ullam temporibus omnis laborum minima autem quaerat, eaque perferendis. Debitis, quod. Ratione, adipisci harum. Fugiat ducimus recusandae qui ipsa molestias beatae labore temporibus nostrum tempore, cumque voluptatibus corrupti possimus, necessitatibus minus deleniti dicta animi reprehenderit! Atque quisquam assumenda mollitia? Maiores, quam!    </p>
+            </div>
+        </div>
+        <div id="photo-gallery" class="discover-card">
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/image1-small.webp">
+                <source media="(max-width: 800px)" srcset="images/image1-medium.webp">
+                <img src="images/image1-large.webp" alt="cat in an ancient warrior suit" loading="lazy" width="832" height="1152">
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/image2-small.webp">
+                <source media="(max-width: 800px)" srcset="images/image2-medium.webp">
+                <img src="images/image2-large.webp" alt="cat with a blue bow around the neck" loading="lazy" width="832" height="1152">
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/image3-small.webp">
+                <source media="(max-width: 800px)" srcset="images/image3-medium.webp">
+                <img src="images/image3-large.webp" alt="cat in a Japanese warrior suit" loading="lazy" width="832" height="1152">
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/image4-small.webp">
+                <source media="(max-width: 800px)" srcset="images/image4-medium.webp">
+                <img src="images/image4-large.webp" alt="cat in anime" loading="lazy" width="832" height="1152">
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/image5-small.webp">
+                <source media="(max-width: 800px)" srcset="images/image5-medium.webp">
+                <img src="images/image5-large.webp" alt="cat in a kimono" loading="lazy" width="832" height="1152">
+            </picture>
+            <picture>
+                <source media="(max-width: 500px)" srcset="images/image6-small.webp">
+                <source media="(max-width: 800px)" srcset="images/image6-medium.webp">
+                <img src="images/image6-large.webp" alt="cat eating noodles" loading="lazy" width="832" height="1152">
+            </picture>
+        </div>
+    </main>
+    <footer>
+        <div id="chamber-info">
+            <img src="images/logo.webp" alt="logo">
+            <h2>Kaohsiung Chamber of Commerce</h2>
+            <p id="address">110 Renren Rd. Jinfu District, Kaohsiung, Taiwan, R.O.C. 52314</p>
+            <p id="telephone">+(886)7-215-7834</p>
+        </div>
+        <div id="author-info">
+            <p class="text" id="copyright">&copy;<span id="year"></span> Kaohsiung Chamber of Commerce</p>
+            <p class="text" id="name"> | Min-ting Chuang</p>
+            <p class="text" id="course"> | WDD 230 Project</p>
+            <p class="text" id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdate.js"></script>
+    <script src="scripts/ham-menu.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/visit-num.js"></script>
+</body>
+</html>

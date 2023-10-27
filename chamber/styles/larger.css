@@ -98,5 +98,19 @@
         flex-grow: 1;
     }
 
-}
+    /* --------------------------------------------------------------- */
 
+    /* discover.html setting */
+    #discover-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+    #side-bar {
+        grid-column: 1/2;
+    }
+    
+    #photo-gallery {
+        grid-column: 2/4;
+    }
+
+}

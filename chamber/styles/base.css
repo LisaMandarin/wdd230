@@ -1,3 +1,5 @@
+  @import url('https://fonts.googleapis.com/css2?family=Bevan&family=Playfair+Display&family=Playfair:opsz,wght@5..1200,300;5..1200,700;5..1200,900&display=swap');
+
 :root {
     --font1: 'Bevan', serif;
     --font2: 'Playfair Display', serif;
@@ -27,8 +29,8 @@ h1, h2 {
 /* dark mode setting */
 #mode {
     position: absolute;
-    top: 1rem;
-    right: 5rem;
+    top: 0.2rem;
+    right: 1rem;
     font-size: 3rem;
     cursor: pointer;
 }
@@ -97,7 +99,7 @@ h1, h2 {
 
 #menu {
     position: absolute;
-    top: 1rem;
+    top: 3rem;
     right: 1rem;
     font-size: 2rem;
     border: 1px solid var(--color-navy-blue);
@@ -246,4 +248,60 @@ footer .text {
     background-color: var(--color-orange);
     text-align: center;
 
+}
+
+/* --------------------------------------------------------------- */
+
+/* discover.html setting */
+#discover-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 1rem;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#discover-container .discover-card {
+    border: 1px solid var(--color-navy-blue);
+    background-color: var(--color-light-grey);
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.discover-label, #discover-welcomeMessage {
+    font-family: var(--font1);
+}
+
+.discover-card h2 {
+    display: block;
+    background-color: var(--color-dark-blue);
+    color: var(--color-orange);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 1rem;
+}
+
+.discover-card p {
+    display: block;
+    margin: 0;
+    padding: 1rem;
+}
+
+#photo-gallery {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+#photo-gallery picture {
+    width: 100%;
+}
+
+#photo-gallery img {
+    width: 100%;
+    height: auto;
 }
