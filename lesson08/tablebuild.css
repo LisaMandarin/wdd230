@@ -1,0 +1,52 @@
+:root {
+    --back1: #03045e;
+    --back2: #023e8a;
+    --back3: #caf0f8;
+    --shadow: #00b4d8;
+    --line: #00b4d8;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+table {
+    margin: 20px auto;
+    border: thin solid var(--back1);
+    box-shadow: 0 0 10px var(--shadow);
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid var(--line);
+}
+
+td {
+    text-align: center;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--back2);
+    font-size: .85rem;
+}
+
+thead tr:first-child th {
+    background-color: navy;
+    color: white;
+}
+
+thead tr:nth-child(2) td:first-child {
+    background-color: navy;
+}
+
+thead tr:nth-child(2) th {
+    background-color: var(--back2);
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--back3);
+}

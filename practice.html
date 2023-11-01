@@ -2,27 +2,44 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    .parent-selector {
-      background-color: aqua;
-      width: 500px;
-      display: flex;
-      justify-content:center;
-      align-items: center;
-      vertical-align: ;
-    }
-    .child-selector {
-      background-color: red;
-      width: 300px;
-      padding: 30px;
-    }
-  </style>
+  <link href="minimal-table.css" rel="stylesheet">
 </head>
 <body>
-  <div class="parent-selector">
-    <div class="child-selector">ABCDE</div>
-  </div>
+  <table>
+    <caption>Table 1: July through November</caption>
+    <thead>
+      <tr>
+        <th colspan="2" scope="colgroup">Wasatch Sales</th>
+      </tr>
+      <tr>
+        <th scope="col">Month</th>
+        <th scope="col">Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>July</td>
+        <td>3,000</td>
+      </tr>
+      <tr>
+        <td>August</td>
+        <td class="highlight">8,000</td>
+      </tr>
+      <tr>
+        <td>September</td>
+        <td>4,000</td>
+      </tr>
+      <tr>
+        <td>October</td>
+        <td>3,000</td>
+      </tr>
+      <tr>
+        <td>November</td>
+        <td>2,000</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 </html>

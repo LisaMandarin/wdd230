@@ -1,0 +1,588 @@
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: square;
+    animation-duration: 4s;
+} */
+
+/* @keyframes square {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: blue;
+    }
+} */
+
+/* -------------------------------------------------------- */
+
+/* @keyframes square {
+    0% {
+        background-color: red;
+    }
+    100% {
+        background-color: blue;
+    } 
+}*/
+
+/* -------------------------------------------------------- */
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: square;
+    animation-duration: 10s;
+} */
+
+/* @keyframes square {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: blue;
+    }
+    100% {
+        background-color: red;
+    }
+} */
+/* -------------------------------------------------------- */
+/* @keyframes square {
+    0% {
+        background-color: red;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: blue;
+    }
+    75% {
+        background-color: yellow;
+    }
+    100% {
+        background-color: red;
+    }
+} */
+/* -------------------------------------------------------- */
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: square;
+    animation-duration: 10s;
+    position: absolute;
+}
+
+@keyframes square {
+    0% {
+        background-color: red;
+        top: 0px;
+    }
+    25% {
+        background-color: yellow;
+        top: 100px
+    }
+    50% {
+        background-color: blue;
+        top: 200px;
+    }
+    75% {
+        background-color: yellow;
+        top: 100px;
+    }
+    100% {
+        background-color: red;
+        top: 0px;
+    }
+} */
+
+/* -------------------------------------------------------- */
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+    text-align: center;
+} */
+
+/* #square-1 {
+    animation-name: square;
+    animation-duration: 10s;
+    top: 0px;
+    left: 0px;
+}
+
+#square-2 {
+    animation-name: square;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    top: 0px;
+    left: 200px;
+}
+
+@keyframes square {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 600px;
+    }
+} */
+
+/* -------------------------------------------------------- */
+/* #square-1 {
+    animation-name: square-1;
+    animation-duration: 10s;
+    top: 0px;
+    left: 0px;
+}
+
+#square-2 {
+    animation-name: square-2;
+    animation-duration: 10s;
+    top: 0px;
+    left: 200px;
+}
+
+@keyframes square-1 {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 400px;
+    }
+}
+
+@keyframes square-2 {
+    0% {
+        left: 200px;
+    }
+    100% {
+        left: 600px;
+    }
+} */
+
+/* -------------------------------------------------------- */
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    text-align: center;
+}
+
+#square-1 {
+    animation-name: square;
+    animation-duration: 10s;
+    top: 0px;
+    left: 0px;
+}
+
+#square-2 {
+    animation-name: square;
+    animation-duration: 10s;
+    animation-delay: 2s;
+    top: 0px;
+    left: 200px;
+}
+
+#square-3 {
+    animation-name: square;
+    animation-duration: 10s;
+    animation-delay: -2s;
+    top: 0px;
+    left: 400px;
+}
+
+@keyframes square {
+    0% {
+        top: 0px;
+    }
+
+    100% {
+        top: 600px;
+    }
+} */
+
+/* -------------------------------------------------------- */
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    text-align: center;
+}
+
+#square-1 {
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    top: 0px;
+    left: 0px;
+}
+
+#square-2 {
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    top: 0px;
+    left: 200px;
+}
+
+#square-3 {
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    top: 0px;
+    left: 400px;
+}
+
+@keyframes square {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 600px;
+    }
+} */
+
+
+/* -------------------------------------------------------- */
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    text-align: center;
+}
+
+#square-1 {
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: normal;
+    top: 0px;
+    left: 0px;
+}
+
+#square-2 {
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: reverse;
+    top: 0px;
+    left: 200px;
+}
+
+#square-3 {
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+    top: 0px;
+    left: 400px;
+}
+
+#square-4 {
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+    top: 0px;
+    left: 600px;
+}
+
+@keyframes square {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 600px;
+    }
+} */
+
+/* -------------------------------------------------------- */
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    text-align: center;
+}
+
+#square-1 {
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    top: 0px;
+    left: 0px;
+}
+
+#square-2 {
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    top: 0px;
+    left: 150px;
+}
+
+#square-3 {
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    top: 0px;
+    left: 300px;
+}
+
+#square-4 {
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    top: 0px;
+    left: 450px;
+}
+
+#square-5 {
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    top: 0px;
+    left: 600px;
+}
+
+@keyframes square {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: 600px;
+    }
+} */
+
+/* -------------------------------------------------------- */
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    text-align: center;
+}
+
+#square-1 {
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+    animation-fill-mode: none;
+    top: 0px;
+    left: 0px;
+}
+
+#square-2 {
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    top: 0px;
+    left: 150px;
+}
+
+#square-3 {
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+    animation-fill-mode: backwards;
+    top: 0px;
+    left: 300px;
+}
+
+#square-4 {
+    animation-name: square;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-delay: 4s;
+    animation-fill-mode: both;
+    top: 0px;
+    left: 450px;
+}
+
+@keyframes square {
+    0% {
+        top: 0px;
+        background-color: red;
+    }
+    100% {
+        top: 600px;
+        background-color: blue;
+    }
+} */
+
+/* -------------------------------------------------------- */
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: absolute;
+    text-align: center;
+}
+
+#square-1 {
+    animation: square 5s linear 2s infinite alternate;
+    top: 0px;
+    left: 0px;
+}
+
+@keyframes square {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        top: 0px;
+        left: 200px;
+    }
+    50% {
+        top: 200px;
+        left: 200px;
+    }
+    75% {
+        top: 200px;
+        left:0px;
+    }
+    100% {
+        top: 0px;
+        left: 0px;
+    }
+} */
+
+/* -------------------------------------------------------- */
+
+/* #ball {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(circle at 50% 120%, #fff 10%, #333 80%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: larger;
+    position: absolute;
+    animation: bouncing 2s linear 0s 1 forwards;
+}
+
+@keyframes bouncing {
+    0% {
+        top: 0px;
+        left: 0px;
+    }
+    25% {
+        top: 50px;
+        left: 50px;
+        rotate: 90deg;
+    }
+    50% {
+        top: 100px;
+        left: 100px;
+        rotate: 180deg;
+    }
+    75% {
+        top: 50px;
+        left: 150px;
+        rotate: 270deg;
+    }
+    100% {
+        top: 0px;
+        left: 200px;
+        rotate: 360deg;
+    }
+} */
+
+/* -------------------------------------------------------- */
+
+#animate {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    padding: 100px;
+    animation: shakeX 4s ease-in 0s forwards;
+}
+@keyframes bounce {
+    from,
+    20%,
+    53%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    40%,
+    43% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+      transform: translate3d(0, -30px, 0) scaleY(1.1);
+    }
+
+    70% {
+      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+      -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+      transform: translate3d(0, -15px, 0) scaleY(1.05);
+    }
+
+    80% {
+      -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
+      transform: translate3d(0, 0, 0) scaleY(0.95);
+    }
+
+    90% {
+      -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+      transform: translate3d(0, -4px, 0) scaleY(1.02);
+    }
+  }
+
+/* -------------------------------------------------------- */
+
+@keyframes shakeX {
+    from,
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      -webkit-transform: translate3d(-10px, 0, 0);
+      transform: translate3d(-10px, 0, 0);
+    }
+
+    20%,
+    40%,
+    60%,
+    80% {
+      -webkit-transform: translate3d(10px, 0, 0);
+      transform: translate3d(10px, 0, 0);
+    }
+  }
