@@ -313,12 +313,13 @@ footer .text {
     padding: 1rem;
 }
 
-#photo-gallery {
+#discover-container #photo-gallery {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    width: 80%;
 }
 
 #photo-gallery picture {

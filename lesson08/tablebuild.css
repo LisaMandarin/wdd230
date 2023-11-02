@@ -34,12 +34,12 @@ caption {
 }
 
 thead tr:first-child th {
-    background-color: navy;
+    background-color: var(--back1);
     color: white;
 }
 
 thead tr:nth-child(2) td:first-child {
-    background-color: navy;
+    background-color: var(--back1);
 }
 
 thead tr:nth-child(2) th {
