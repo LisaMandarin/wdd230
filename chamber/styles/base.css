@@ -316,9 +316,10 @@ footer .text {
 #discover-container #photo-gallery {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 50px;
+    margin-top: .5rem;
     width: 80%;
 }
 
