@@ -323,8 +323,12 @@ footer .text {
     width: 80%;
 }
 
-#photo-gallery picture {
+#photo-gallery figure {
     width: 100%;
+}
+
+#photo-gallery figure figcaption {
+    padding: 10px;
 }
 
 #photo-gallery img {
