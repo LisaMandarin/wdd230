@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Minting Chuang">
+    <meta name="description" content="Demonstrate my understanding of HTML forms">
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/large.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <header id="header-content">
+        <img src="images/lisa-photo.webp" alt="Lisa's Photo">
+            <h1>Min-ting Chuang</h1>
+    </header>
+    <nav>
+        <button id="menu" type="button" aria-label="menu"></button>            
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lesson03/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="chamber/index.html">Chamber</a></li>
+            <li><a href="https://www.byui.edu/" target="_blank">BYU-Idaho</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/3-ne/14?lang=eng#p8" target="_blank">Scripture</a></li>
+        </ul>
+    </nav>
+    <main id="record-container">
+        <h1>We have received your information</h1>
+        <h1 id="thank-you-animate">Thank you!</h1>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Min-ting Chuang | Taiwan<img src="images/taiwan-flag.png" alt="Taiwan Flag" width="20" height="30"></p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/ham-menu.js"></script>
+</body>
+</html>

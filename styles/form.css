@@ -1,0 +1,79 @@
+:root {
+    --wrong-bgcolor: #ffc0cb;
+    --right-bgcolor: #98C1D9;
+    --wrong-text: red;
+    --right-text: #2a3e59;
+    --input-bgcolor: lightgrey;
+    --font-color: #2a3e59;
+}
+* {
+    font-family: 'Playfair';
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 500px;
+    color: var(--font-color);
+}
+
+form fieldset {
+    width: 100%;
+    margin: 2rem 0;
+    border: 1px solid var(--font-color);
+    border-radius: 10px;
+    
+}
+label, input {
+    display: block;
+}
+
+label {
+    padding-top: 1.5rem;
+}
+
+#alertMessagePWConfirm {
+    font-size: 0.75rem;
+}
+label input:required {
+    border-left: 5px solid red;
+    background-color: var(--wrong-bgcolor)
+}
+
+label input:required:valid {
+    border-left: 5px solid var(--right-text);
+    background-color: var(--right-bgcolor);
+}
+input {
+    width: 100%;
+    max-width: 20rem;
+    padding: .75rem;
+}
+
+input::placeholder {
+    font-size: .75rem;
+}
+
+#alertMessagePWConfirm {
+    color: var(--wrong-text);
+}
+
+#rate {
+    padding: 0;
+}
+
+#submitBtn {
+    width: 100%;
+    max-width: 10rem;
+    border: .5px solid #333;
+    border-radius: 15px;
+}
