@@ -41,7 +41,7 @@ label {
     padding-top: 1.5rem;
 }
 
-#alertMessagePWConfirm {
+#alertMessagePWConfirm, #alertMessagePWRule, #alertMessageEmail {
     font-size: 0.75rem;
 }
 label input:required {
@@ -63,7 +63,7 @@ input::placeholder {
     font-size: .75rem;
 }
 
-#alertMessagePWConfirm {
+#alertMessagePWConfirm, #alertMessagePWRule, #alertMessageEmail {
     color: var(--wrong-text);
 }
 

@@ -112,4 +112,18 @@
         grid-column: 2/4;
     }
 
+    /* --------------------------------------------------------------- */
+
+    /* join.html */
+    #join-container {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    #join-container table {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: start;
+        font-size: .9rem;
+    }
 }

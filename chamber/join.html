@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Min-ting Chuang">
+    <meta name="description" content="This is a webpage for a prospective member to apply to join the Kaohsiung Chamber of Commerce through a membership application form.">
+    <meta property="og:title" content="Join - Kaohsiung Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lisamandarin.github.io/wdd230/chamber/join.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <title>Join - Kaohsiung Chamber of Commerce</title>
+</head>
+<body>
+    <div id="mode">
+        🕶️
+    </div>
+    <header id="headerContainer">
+        <img src="images/logo.webp" alt="logo of Kaohsiung">
+        <h1>Kaohsiung Chamber of Commerce</h1>
+    </header>
+    <nav>
+        <button id="menu" aria-label="menu button"></button>
+        <ul class="navigation">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="discover.html">Discover</a></li>
+            <li><a href="#">About US</a></li>
+            <li><a href="#">Explore Members</a></li>
+            <li><a href="#">Announcement</a></li>
+            <li><a href="#">Join Us</a></li>
+        </ul>
+    </nav>
+    <main id="join-container">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend class="dark-light">Application Form</legend>
+                <label for="fname" class="dark-light">First Name* <input type="text" name="fname" id="fname" required></label>
+                <label for="lname" class="dark-light">Last Name* <input type="text" name="lname" id="lname" required></label>
+                <label for="title" class="dark-light">Title/Position <input type="text" name="title" id="title" pattern="[a-zA-Z -]{7,}" placeholder="Letters, hyphens, and spaces only. 7 characters or more."></label>
+                    <div id="alertMsgTitle"></div>
+                <label for="email" class="dark-light">Email* <input type="email" name="email" id="email" placeholder="someone@gmail.com" required></label>
+                <label for="mobile" class="dark-light">Mobile Phone Number* <input type="tel" name="mobile" id="mobile" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required></label>
+                    <div id="alertMsgMobile"></div>
+                <label for="business" class="dark-light">Business/Organization's Name* <input type="text" name="business" id="business" required></label>
+                <label class="dark-light">Membership Level
+                    <select name="membership">
+                        <option value="">Please Select</option>
+                        <option value="NP Membership">NP Membership is for non profit organizations and there is no fee.</option>
+                        <option value="Bronze Membership">Bronze Membership</option>
+                        <option value="Silver Membership">Silver Membership</option>
+                        <option value="Gold Membership">Gold Membership</option>
+                    </select>
+                </label>
+                <label for="description" class="dark-light">Business/Organization's Description</label>
+                    <textarea name="description" id="description" rows="10" cols="50"></textarea>
+                <input type="hidden" name="timestamp" id="timestamp">
+            </fieldset>
+            <button type="submit">Send the Application</button>
+        </form>
+        <table>
+            <caption>Membership Levels</caption>
+            <tbody>
+                <tr>
+                    <td></td>
+                    <th scope="col">NP Membership</th>
+                    <th scope="col">Bronze Membership</th>
+                    <th scope="col">Silver Membership</th>
+                    <th scope="col">Gold Membership</th>
+                </tr>
+                <tr>
+                    <th scope="row">Special Events</th>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th scope="row">Training</th>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th scope="row">Advertising</th>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th scope="row">Event Discount</th>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>❌</td>
+                    <td>✔️</td>
+                </tr>
+                <tr>
+                    <th scope="row">Annual Cost</th>
+                    <td>$0</td>
+                    <td>$30</td>
+                    <td>$50</td>
+                    <td>$60</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+    <footer>
+        <div id="chamber-info">
+            <img src="images/logo.webp" alt="Kaohsiung logo">
+            <h2>Kaohsiung Chamber of Commerce</h2>
+            <p id="address">110 Renren Rd. Jinfu District, Kaohsiung, Taiwan, R.O.C. 52314</p>
+            <p id="telephone">+(886)7-215-7834</p>
+        </div>
+        <div id="author-info">
+            <p class="text" id="copyright">&copy;<span id="year"></span> Kaohsiung Chamber of Commerce</p>
+            <p class="text" id="name"> | Min-ting Chuang</p>
+            <p class="text" id="course"> | WDD 230 Project</p>
+            <p class="text" id="lastModified"></p>
+        </div>
+    </footer>
+    <script src="scripts/getdate.js"></script>
+    <script src="scripts/ham-menu.js"></script>
+    <script src="scripts/dark-mode.js"></script>
+    <script src="scripts/join.js"></script>
+</body>
+</html>
