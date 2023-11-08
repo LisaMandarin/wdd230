@@ -1,0 +1,154 @@
+{
+    "lessons" : [
+        {
+            "lesson" : "01",
+            "links" : [
+                {
+                    "url" : "lesson01/holygrail.html",
+                    "title" : "CSS Layout Review"
+                }
+            ]
+        },
+        {
+            "lesson" : "02",
+            "links" : [
+                {
+                    "url" : "lesson02/design.html",
+                    "title" : "Web Design Principles"
+                },
+                {
+                    "url" : "lesson01/media-query.htmllesson01/media-query.html",
+                    "title" : "CSS Media Queries"
+                },
+                {
+                    "url" : "lesson02/design-principles.html",
+                    "title" : "Design Principles"
+                }
+            ]
+        },
+        {
+            "lesson" : "03",
+            "links" : [
+                {
+                    "url" : "images/CSS-combinator.png",
+                    "title" : "Combinators"
+                },
+                {
+                    "url" : "https://codepen.io/Lisa-Chuang/pen/BavxMWW",
+                    "title" : "Pseudo-element"
+                },
+                {
+                    "url" : "https://codepen.io/Lisa-Chuang/pen/MWZGLLZ",
+                    "title" : "Responsive Menu"
+                },
+                {
+                    "url" : "lesson03/chamber-site-plan.html",
+                    "title" : "Chamber of Commerce Site Plan"
+                }
+            ]
+        },
+        {
+            "lesson" : "04",
+            "links" : [
+                {
+                    "url" : "https://codepen.io/Lisa-Chuang/pen/poqxjLK",
+                    "title" : "CSS Pseudo-classes"
+                },
+                {
+                    "url" : "chamber/index.html",
+                    "title" : "Chamber of Commerce Home Page"
+                }
+            ]
+        },
+        {
+            "lesson" : "05",
+            "links" : [
+                {
+                    "url" : "lesson05/bom.html",
+                    "title" : "BOM Application"
+                }
+            ]
+        },
+        {
+            "lesson" : "06",
+            "links" : [
+                {
+                    "url" : "lesson06/images/landscape.webp",
+                    "title" : "WebP"
+                },
+                {
+                    "url" : "lesson06/responsive-images.html",
+                    "title" : "Responsive Images"
+                },
+                {
+                    "url" : "url3",
+                    "title" : "title3"
+                }
+            ]
+        },
+        {
+            "lesson" : "07",
+            "links" : [
+                {
+                    "url" : "lesson03/lazyload.html",
+                    "title" : "Lazy Loading"
+                },
+                {
+                    "url" : "lesson07/bom.html",
+                    "title" : "Local Storage"
+                }
+            ]
+        },
+        {
+            "lesson" : "08",
+            "links" : [
+                {
+                    "url" : "lesson08/tablebuild.html",
+                    "title" : "HTML Tables"
+                },
+                {
+                    "url" : "lesson08/index.html",
+                    "title" : "HTML Forms"
+                },
+                {
+                    "url" : "form.html",
+                    "title" : "Form Build"
+                }
+            ]
+        },
+        {
+            "lesson" : "09",
+            "links" : [
+                {
+                    "url" : "lesson05/new-ward-members.json",
+                    "title" : "JSON"
+                },
+                {
+                    "url" : "lesson09/prophets.html",
+                    "title" : "Fetch API"
+                },
+                {
+                    "url" : "",
+                    "title" : ""
+                }
+            ]
+        },
+        {
+            "lesson" : "10",
+            "links" : [
+                {
+                    "url" : "",
+                    "title" : ""
+                },
+                {
+                    "url" : "",
+                    "title" : ""
+                },
+                {
+                    "url" : "",
+                    "title" : ""
+                }
+            ]
+        }
+    ]
+}
