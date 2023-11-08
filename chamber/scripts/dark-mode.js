@@ -3,7 +3,9 @@ const cardSmall = document.querySelectorAll('.card-small');
 const discoverCard = document.querySelectorAll('.discover-card');
 const main = document.querySelector('main');
 const darkLight = document.querySelectorAll('.dark-light');
-const thankyouH1 = document.querySelectorAll('.thankyou-h1')
+const thankyouH1 = document.querySelectorAll('.thankyou-h1');
+const directoryContainer = document.querySelector('#directory-container');
+
 
 modeButton.addEventListener('click', () => {
     if (modeButton.textContent.includes('🕶️')) {
@@ -22,6 +24,7 @@ modeButton.addEventListener('click', () => {
         thankyouH1.forEach((word)=> {
             word.style.color = "#f8f8f8";
         });
+        directoryContainer.style.color = '#f8f8f8';
         modeButton.textContent = "🔆";
     }
     else {
@@ -40,6 +43,7 @@ modeButton.addEventListener('click', () => {
         thankyouH1.forEach((word)=> {
             word.style.color = "#2D3142";
         });
+        directoryContainer.style.color = '#2D3142';
         modeButton.textContent = "🕶️";
     }
 });
