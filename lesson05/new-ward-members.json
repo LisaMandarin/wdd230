@@ -1,0 +1,127 @@
+[
+    {
+        "familyName" : "Orange",
+        "dateMovingIn" : 20191107,
+        "familyNum" : 3,
+        "Visited" : true,
+        "Individuals" : [
+            {
+                "name" : "Alfred",
+                "gender" : "male",
+                "birthdate": 19731010
+            },
+            {
+                "name" : "Maria",
+                "gender" : "female",
+                "birthdate": 19750909
+            },
+            {
+                "name" : "Andy",
+                "gender" : "male",
+                "birthdate": 20000101
+            }
+        ]
+    },
+    {
+        "familyName" : "Zhang",
+        "dateMovingIn" : 20170831,
+        "familyNum" : 3,
+        "Visited" : true,
+        "Individuals" : [
+            {
+                "name" : "Sense",
+                "gender" : "male",
+                "birthdate": 19790710
+            },
+            {
+                "name" : "Lisa",
+                "gender" : "female",
+                "birthdate": 19810608
+            },
+            {
+                "name" : "Selina",
+                "gender" : "female",
+                "birthdate": 20101107
+            }
+        ]
+    },
+    {
+        "familyName" : "Cai",
+        "dateMovingIn" : 20110101,
+        "familyNum" : 2,
+        "Visited" : false,
+        "Individuals": [
+            {
+                "name" : "Xu-san",
+                "gender" : "male",
+                "birthdate": 19630228
+            },
+            {
+                "name" : "Shi-gui",
+                "gender" : "female",
+                "birthdate": 19721108
+            }
+        ]
+    },
+    {
+        "familyName" : "Lanning",
+        "dateMovingIn" : 20220505,
+        "familyNum" : 5,
+        "Visited" : true,
+        "Individuals" : [
+            {
+                "name" : "David",
+                "gender" : "male",
+                "birthdate" : 19740525
+            },
+            {
+                "name" : "Amber",
+                "gender" : "female",
+                "birthdate" : 19780719
+            },
+            {
+                "name" : "Angelina",
+                "gender" : "female",
+                "birthdate" : 20011110
+            },
+            {
+                "name" : "Parker",
+                "gender" : "male",
+                "birthdate" : 20060511
+            },
+            {
+                "name" : "Holland",
+                "gender" : "male",
+                "birthdate" : 20110719
+            }
+        ]
+    },
+    {
+        "familyName" : "Cheng",
+        "dateMovingIn" : 20050310,
+        "familyNum" : 4,
+        "Visited" : true,
+        "Individuals" : [
+            {
+                "name" : "Tsung-chih",
+                "gender" : "male",
+                "birthdate": 19751202
+            },
+            {
+                "name" : "Hsiu-ling",
+                "gender" : "female",
+                "birthdate": 19761010
+            },
+            {
+                "name" : "Yi",
+                "gender" : "female",
+                "birthdate": 20060213
+            },
+            {
+                "name" : "Chih",
+                "gender" : "male",
+                "birthdate": 20071016
+            }
+        ]
+    }
+]
