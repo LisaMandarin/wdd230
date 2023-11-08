@@ -1,0 +1,67 @@
+{
+    "companies" : [
+        {
+            "name" : "日月光半導體製造股份有限公司",
+            "address" : "高雄市楠梓區經三路26號",
+            "phone" : "07-3617131",
+            "url" : "https://ase.aseglobal.com/ch/about-ase/",
+            "image" : "images/logos/日月光.webp",
+            "membershipLV" : "Gold",
+            "notes" : "ADVANCED SEMICONDUCTOR ENGINEERING, INC."
+        },
+        {
+            "name" : "光寶科技股份有限公司",
+            "address" : "高雄市楠梓區內環北路101號",
+            "phone" : "07-9568888",
+            "url" : "https://www.liteon.com/zh-tw",
+            "image" : "images/logos/光寶.webp",
+            "membershipLV" : "Gold",
+            "notes" : "LITE-ON AUTOMOTIVE CORPORATION"
+        },
+        {
+            "name" : "國巨股份有限公司",
+            "address" : "高雄市楠梓區西三街16號",
+            "phone" : "07-9618999",
+            "url" : "https://www.yageo.com/zh-TW/Home",
+            "image" : "images/logos/國巨.webp",
+            "membershipLV" : "Silver",
+            "notes" : "YAGEO CORPORATION"
+        },
+        {
+            "name" : "台灣恩智浦半導體股份有限公司",
+            "address" : "高雄市楠梓區經五路10號",
+            "phone" : "07-3612511",
+            "url" : "https://www.nxp.com/",
+            "image" : "images/logos/恩智浦.webp",
+            "membershipLV" : "Silver",
+            "notes" : "NXP SEMICONDUCTORS TAIWAN LTD."
+        },
+        {
+            "name" : "李長榮化學工業股份有限公司",
+            "address" : "高雄市楠梓區研發路66-9號",
+            "phone" : "07-3648814",
+            "url" : "https://www.lcycic.com/lcy/tc/",
+            "image" : "images/logos/李長榮.webp",
+            "membershipLV" : "NP",
+            "notes" : "LCY CHEMICAL CORP."
+        },
+        {
+            "name" : "華泰電子股份有限公司",
+            "address" : "高雄市楠梓區中三街九號",
+            "phone" : "07-3613131",
+            "url" : "https://www.ose.com.tw/",
+            "image" : "images/logos/華泰.webp",
+            "membershipLV" : "Bronze",
+            "notes" : "ORIENT SEMICONDUCTOR ELECTRONICS LIMITED"
+        },
+        {
+            "name" : "長華電材股份有限公司",
+            "address" : "高雄市楠梓區東七街16號6樓",
+            "phone" : "07-3622663",
+            "url" : "https://www.cwei.com.tw/",
+            "image" : "images/logos/長華.webp",
+            "membershipLV" : "Bronze",
+            "notes" : "CHANG WAH ELECTROMATERIALS INC."
+        }
+    ]
+}

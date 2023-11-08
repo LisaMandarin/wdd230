@@ -27,44 +27,21 @@
     <nav>
         <button id="menu" aria-label="menu button"></button>
         <ul class="navigation">
-            <li><a href="#">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="#">About US</a></li>
-            <li><a href="directory.html">Directory</a></li>
+            <li><a href="#">Directory</a></li>
             <li><a href="#">Announcement</a></li>
             <li><a href="join.html">Join Us</a></li>
         </ul>
     </nav>
-    <main id="container">
-        <div class="card" id="hero">
-            <picture>
-                <source media="(max-width: 400px)" srcset="images/wdd230-small.webp">
-                <source media="(max-width: 800px)" srcset="images/wdd230-medium.webp">
-                <img src="images/wdd230-large.webp" alt="Come join us" width="1500" height="1000">
-            </picture>
-            <!-- <picture>
-                <source media="(max-width: 400px)" srcset="images/hero-small.webp">
-                <source media="(max-width: 800px)" srcset="images/hero-medium.webp">
-                <img src="images/hero-large.webp" alt="Come join us" width="1000" height="666">
-            </picture> -->
-            <button id="join" type="button" aria-label="join-button">Join Us</button>
+    <main id="directory-container">
+        <div class="directory-menu">
+            <button>⏹️Grid</button>
+            <button>📄List</button>
         </div>
-        <div class="card card-small" id="event">
-            <h2>Event</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi culpa minima, sunt nostrum, soluta cupiditate facere laborum, repudiandae recusandae nesciunt animi! Consequuntur pariatur asperiores modi voluptate accusamus similique accusantium nemo, cum delectus. Veniam sunt aut corrupti soluta nam recusandae quo molestiae tenetur temporibus. Nemo pariatur aut, labore nulla quod facere nisi ab recusandae, sed quasi ea omnis accusantium, dolor iure!</p>
-        </div>
-        <div class="card card-small" id="weather">
-            <h2>Weather</h2>
-            <p>
-                <span id="temperature"></span>
-                <br><span id="wind-speed"></span>
-                <br><span id="windchill"></span>
-            </p>
-        </div>
-        <div class="card card-small" id="spotlights">
-            <h2>Member Spotlights</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus magni est molestias earum aliquid. Optio amet molestias cumque, excepturi sit consectetur saepe nemo tempore at quaerat, illum aspernatur voluptatum! Reprehenderit cumque dignissimos vitae fuga quod maiores repudiandae asperiores facilis optio!</p>
-        </div>
+        <article class="directory-grid">
+        </article>
     </main>
     <footer>
         <div id="chamber-info">
@@ -83,6 +60,5 @@
     <script src="scripts/getdate.js"></script>
     <script src="scripts/ham-menu.js"></script>
     <script src="scripts/dark-mode.js"></script>
-    <script src="scripts/windchill.js"></script>
 </body>
 </html>
