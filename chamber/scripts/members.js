@@ -23,7 +23,8 @@ function displayMembers(companies) {
         address.textContent = `Address: ${company.address}`;
         phone.textContent = `Telephone: ${company.phone}`;
         url.setAttribute('href', company.url);
-        url.setAttribute('target', "_blank")
+        url.setAttribute('target', "_blank");
+        url.setAttribute('class', "directory-link");
         url.textContent = `${company.name}`;
         image.setAttribute('src', company.image);
         image.setAttribute('alt', company.name);
