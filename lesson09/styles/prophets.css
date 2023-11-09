@@ -7,10 +7,9 @@ body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
-header {
+body {
   text-align: center;
 }
-
 
 #cards {
   display: grid;
