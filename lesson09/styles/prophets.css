@@ -7,11 +7,18 @@ body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+header {
+  text-align: center;
+}
 
 
 #cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+}
+
+#cards section {
+  margin-bottom: 100px;
 }
 
 h2 {
