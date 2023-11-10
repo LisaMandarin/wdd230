@@ -5,7 +5,7 @@ const main = document.querySelector('main');
 const darkLight = document.querySelectorAll('.dark-light');
 const thankyouH1 = document.querySelectorAll('.thankyou-h1');
 const directoryContainer = document.querySelector('#directory-container');
-const directoryLinks = document.querySelectorAll('#directory-container .directory-link');
+const directoryNames = document.querySelectorAll('#directory-container .directoryname');
 
 
 modeButton.addEventListener('click', () => {
@@ -26,8 +26,8 @@ modeButton.addEventListener('click', () => {
             word.style.color = "#f8f8f8";
         });
         directoryContainer.style.color = '#f8f8f8';
-        directoryLinks.forEach((link) => {
-            link.style.color = "#f8f8f8";
+        directoryNames.forEach((name) => {
+            name.style.color = "#f8f8f8";
         });
         modeButton.textContent = "🔆";
     }
@@ -48,8 +48,8 @@ modeButton.addEventListener('click', () => {
             word.style.color = "#2D3142";
         });
         directoryContainer.style.color = '#2D3142';
-        directoryLinks.forEach((link) => {
-            link.style.color = "#2D3142";
+        directoryNames.forEach((name) => {
+            name.style.color = "#2D3142";
         });
         modeButton.textContent = "🕶️";
     }
