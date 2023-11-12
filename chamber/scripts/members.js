@@ -5,8 +5,8 @@ const directory = document.querySelector('.directory-grid')
 async function getMembers() {
     const response = await fetch(dataURL);
     const data = await response.json();
-
-    displayMembers(data.companies)
+    
+    displayMembers(data.companies);
 }
 
 function displayMembers(companies) {
