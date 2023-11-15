@@ -26,7 +26,7 @@ function displayResults(data) {
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
-    captionDesc.textContent = `${desc.toUpperCase()}`;
+    captionDesc.textContent = desc.toUpperCase();
 }
 
 apiFetch();
