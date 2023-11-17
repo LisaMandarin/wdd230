@@ -37,29 +37,37 @@
     </nav>
     <main id="container">
         <div class="card" id="hero">
-            <picture>
+            <!-- <picture>
                 <source media="(max-width: 400px)" srcset="images/wdd230-small.webp">
                 <source media="(max-width: 800px)" srcset="images/wdd230-medium.webp">
                 <img src="images/wdd230-large.webp" alt="Come join us" width="1500" height="1000">
-            </picture>
-            <!-- <picture>
+            </picture> -->
+            <picture>
                 <source media="(max-width: 400px)" srcset="images/hero-small.webp">
                 <source media="(max-width: 800px)" srcset="images/hero-medium.webp">
                 <img src="images/hero-large.webp" alt="Come join us" width="1000" height="666">
-            </picture> -->
-            <button id="join" type="button" aria-label="join-button">Join Us</button>
+            </picture>
+            <button id="join" type="button" aria-label="join-button">Kaohsiung Chamber of Commerce</button>
         </div>
         <div class="card dark-light" id="event">
             <h2>Event</h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi culpa minima, sunt nostrum, soluta cupiditate facere laborum, repudiandae recusandae nesciunt animi! Consequuntur pariatur asperiores modi voluptate accusamus similique accusantium nemo, cum delectus. Veniam sunt aut corrupti soluta nam recusandae quo molestiae tenetur temporibus. Nemo pariatur aut, labore nulla quod facere nisi ab recusandae, sed quasi ea omnis accusantium, dolor iure!</p>
         </div>
         <div class="card dark-light" id="weather">
-            <h2>Weather</h2>
+            <h2>Current Weather</h2>
             <p>
                 <span id="temperature"></span>
                 <br><span id="wind-speed"></span>
                 <br><span id="windchill"></span>
+                <br><span id="current-temperature"></span>
+                <br><span id="current-weather"></span>
             </p>
+            
+            <h2>Weather Forcast</h2>
+            <div id="weather-forcast">
+                
+
+            </div>
         </div>
         <div class="card dark-light" id="spotlights">
             <h2>Member Spotlights</h2>
@@ -84,5 +92,6 @@
     <script src="scripts/ham-menu.js"></script>
     <script src="scripts/dark-mode.js"></script>
     <script src="scripts/windchill.js"></script>
+    <script src="scripts/weather.js"></script>
 </body>
 </html>
