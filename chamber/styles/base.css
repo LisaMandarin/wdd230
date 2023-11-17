@@ -147,12 +147,6 @@ h1, h2 {
         flex-direction: column;
     }
 
-    #join {
-        position: absolute;
-        top: 250px;
-        left:150px;
-    }
-
     #chamber-info {
         display: grid;
         grid-template-columns: auto auto;
@@ -200,6 +194,7 @@ h1, h2 {
 #container #hero {
     border: none;
     background-color: var(--color-white);
+    position: relative;
 }
 
 #hero img {
@@ -222,6 +217,45 @@ h1, h2 {
     margin: 0;
     align-self: center;
     opacity: 0.8;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+}
+
+#event #banner {
+    width: 80%;
+    border: 5px solid var(--color-grey);
+    background-color: var(--color-orange);
+    margin:  10px auto;
+    padding: 0px 30px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#event #banner h3 {
+    text-align: center;
+    animation: flash 2s infinite;
+}
+
+@keyframes flash {
+    from,
+    50%,
+    to {
+      opacity: 1;
+    }
+  
+    25%,
+    75% {
+      opacity: 0;
+    }
+  }
+
+#close-banner {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+    z-index: 1;
 }
 
 .card h2 {
