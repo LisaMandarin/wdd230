@@ -219,7 +219,7 @@ h1, h2 {
     opacity: 0.8;
     position: absolute;
     top: 50%;
-    left: 30%;
+    left: 100px;
 }
 
 #event #banner {
@@ -232,21 +232,53 @@ h1, h2 {
     position: relative;
 }
 
-#event #banner h3 {
-    text-align: center;
-    animation: flash 2s infinite;
+#event #banner a {
+    color: var(--color-dark-blue)
 }
 
-@keyframes flash {
-    from,
-    50%,
-    to {
-      opacity: 1;
+.hidden {
+    display: none;
+}
+
+#event #banner h3 {
+    text-align: center;
+    animation: rubberBand 2s infinite;
+}
+
+@keyframes rubberBand {
+    from {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
     }
   
-    25%,
+    30% {
+      -webkit-transform: scale3d(1.25, 0.75, 1);
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      -webkit-transform: scale3d(0.75, 1.25, 1);
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      -webkit-transform: scale3d(1.15, 0.85, 1);
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      -webkit-transform: scale3d(0.95, 1.05, 1);
+      transform: scale3d(0.95, 1.05, 1);
+    }
+  
     75% {
-      opacity: 0;
+      -webkit-transform: scale3d(1.05, 0.95, 1);
+      transform: scale3d(1.05, 0.95, 1);
+    }
+  
+    to {
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
     }
   }
 
