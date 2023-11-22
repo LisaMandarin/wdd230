@@ -208,22 +208,23 @@ a {
 }
 
 #join {
-    display: block;
     background-color: var(--color-dark-blue);
-    color: var(--color-white);
     font-family: var(--font1);
-    font-weight: bolder;
+    font-size: 1.3rem;
     border: 10px double var(--color-orange);
     border-radius: 20px;
-    /* width: 350px;
-    height: 50px; */
-    padding: 5px;
-    margin: 0;
-    align-self: center;
+    padding: 15px;
     opacity: 0.8;
     position: absolute;
     top: 40%;
     left: 30%;
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+#join a {
+    color: var(--color-white);
+    text-decoration: none;
 }
 
 #event #banner {

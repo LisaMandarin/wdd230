@@ -31,7 +31,16 @@ function displayMembers(companies) {
         membershipLV.textContent = `Membership Level: ${company.membershipLV} Membership`;
         notes.textContent = `${company.notes}`;
 
+        let membershipIcon = document.createElement('span');
+        membershipIcon.setAttribute('class', 'membership-icon');
+        if (company.membershipLV==='Gold') {
+            membershipIcon.textContent = '🥇';
+        } else if (company.membershipLV==='Silver') {
+            membershipIcon.textContent = '🥈';
+        }
+
         name.appendChild(url);
+        name.appendChild(membershipIcon);
 
         section.appendChild(image);
         section.appendChild(name);
