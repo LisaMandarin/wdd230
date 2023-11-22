@@ -1,0 +1,23 @@
+body {
+    background-color: #2D3142;
+    color: #ffffff;
+}
+.dark-light {
+    color: #2D3142;
+}
+.dark-light1 {
+    color:#ffffff;
+}
+
+/* ----------------------------------------------------------------- */
+/* directory.html */
+#directory-container .directory-grid a {
+    color: #ffffff;
+}
+#directory-container .directory-list section:nth-child(even) {
+    color:#2D3142;
+}
+
+#directory-container .directory-list section:nth-child(odd) a {
+    color: #ffffff;
+}

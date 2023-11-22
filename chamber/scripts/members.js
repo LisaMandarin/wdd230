@@ -24,7 +24,7 @@ function displayMembers(companies) {
         phone.textContent = `Telephone: ${company.phone}`;
         url.setAttribute('href', company.url);
         url.setAttribute('target', "_blank");
-        url.setAttribute('class', "company-name");
+        url.setAttribute('class', "dark-light1"); 
         url.textContent = `${company.name}`;
         image.setAttribute('src', company.image);
         image.setAttribute('alt', company.name);
@@ -47,16 +47,24 @@ function displayMembers(companies) {
 
 getMembers();
 
-const gridBTN = document.querySelector('#directory-gridBTN');
-const listBTN = document.querySelector('#directory-listBTN');
-const display = document.querySelector('article');
 
-gridBTN.addEventListener('click', () => {
-    display.classList.add('directory-grid');
-    display.classList.remove('directory-list');
-});
 
-listBTN.addEventListener('click', () => {
-    display.classList.add('directory-list');
-    display.classList.remove('directory-grid')
+document.addEventListener('DOMContentLoaded', () => {
+    const gridBTN = document.querySelector('#directory-gridBTN');
+    const listBTN = document.querySelector('#directory-listBTN');
+    const display = document.querySelector('article');
+    gridBTN.addEventListener('click', () => {
+        display.classList.add('directory-grid');
+        display.classList.remove('directory-list');
+    });
+
+    listBTN.addEventListener('click', () => {
+        display.classList.add('directory-list');
+        display.classList.remove('directory-grid');
+
+        const urls = document.querySelectorAll('.dark-light1');
+        urls.forEach((url) => {
+            url.classList.remove('dark-light1');
+        });
+    });
 });

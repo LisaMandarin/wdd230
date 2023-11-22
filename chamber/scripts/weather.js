@@ -31,7 +31,6 @@ async function apiFetchForcast() {
         const response = await fetch(forcastURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
 
             const temp1 = data.list[8].main.temp;
             const timeString1 = data.list[8].dt_txt;
