@@ -304,11 +304,25 @@ a {
     padding: 0 1rem;
 }
 
-.card p {
+#container article {
+    padding: 1rem;
+}
+
+#container article img {
+    width: 100%;
+    height: auto;
+}
+
+#container #spotlights article img {
+    width: 100px;
+    height: 100px;
+}
+
+/* .card p {
     display: block;
     margin: 0;
     padding: 1rem;
-}
+} */
 #container #weather #current-weather-container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -321,9 +335,8 @@ a {
 }
 
 #container #weather-forcast {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 /* --------------------------------------------------------------- */
