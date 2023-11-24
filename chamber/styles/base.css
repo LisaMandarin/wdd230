@@ -78,6 +78,10 @@ a {
     .navigation li {
         display: none;
     }
+    .discover-article {
+        max-height: 500px;
+        overflow: scroll;
+    }
 }
 .navigation {
     display: flex;
@@ -473,6 +477,9 @@ footer .text {
     position: fixed;
     bottom: 15%;
     font-size: 1.5rem;
+    background-color: var(--color-orange);
+    padding: 15px;
+    border-radius: 15px;
 }
 #photo-gallery figure {
     width: 100%;
