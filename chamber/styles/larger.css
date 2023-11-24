@@ -1,4 +1,4 @@
-@media (min-width: 800px) {
+@media (min-width: 400px) {
     .navigation {
         flex-direction: row;
         margin: 0 auto;

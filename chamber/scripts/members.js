@@ -39,9 +39,9 @@ function displayMembers(companies) {
             membershipIcon.textContent = '🥈';
         }
 
-        name.appendChild(url);
         name.appendChild(membershipIcon);
-
+        name.appendChild(url);
+        
         section.appendChild(image);
         section.appendChild(name);
         section.appendChild(address);
