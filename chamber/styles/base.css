@@ -26,6 +26,7 @@ h1, h2 {
 
 a {
     color: var(--color-dark-blue);
+    text-decoration: none;
 }
 
 /* --------------------------------------------------------------- */
@@ -417,12 +418,18 @@ footer .text {
 
 #discover-container .discover-card {
     border: 1px solid var(--color-navy-blue);
-    /* background-color: var(--color-light-grey); */
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
 }
 
+#discover-container .discover-card article {
+    line-height: 2rem;
+}
+
+#discover-container .discover-card ul {
+    line-height: 2rem;
+}
 .discover-label, #discover-welcomeMessage {
     font-family: var(--font1);
 }
@@ -447,6 +454,9 @@ footer .text {
     margin: 5px 0 0;
 }
 
+#discover-container .discover-card#attraction-list ul{
+    line-height: 2.8rem;
+}
 #discover-container #photo-gallery {
     display: flex;
     flex-direction: column;
@@ -455,8 +465,15 @@ footer .text {
     gap: 50px;
     margin-top: .5rem;
     width: 80%;
+    border: none;
+    position: relative;
 }
 
+#photo-gallery #back-list {
+    position: fixed;
+    bottom: 15%;
+    font-size: 1.5rem;
+}
 #photo-gallery figure {
     width: 100%;
 }
@@ -478,6 +495,7 @@ footer .text {
     border-color: var(--color-orange);
     box-shadow: 0 8px 16px rgb(0, 0, 0);
 }
+
 
 /* --------------------------------------------------------------- */
 
