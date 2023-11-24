@@ -429,6 +429,11 @@ footer .text {
     padding: 1rem;
 }
 
+.discover-card article h3 {
+    padding: 0 1rem;
+    margin: 5px 0 0;
+}
+
 #discover-container #photo-gallery {
     display: flex;
     flex-direction: column;
