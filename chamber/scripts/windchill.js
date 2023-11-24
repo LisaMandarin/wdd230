@@ -18,9 +18,9 @@ async function apiFetchCurrent() {
             const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
             
             currentTemperature.textContent = `${temp}℃`;
-            currentTemperature.style.fontSize = "1.7rem";
+            currentTemperature.style.fontSize = "100%";
             windSpeed.textContent = `${v} mph`;
-            windSpeed.style.fontSize = "1.5rem";
+            windSpeed.style.fontSize = "100%";
             showWindChill(temp, v);
             currentWeather.textContent = `${description.toUpperCase()}`;
             let weatherImage = document.createElement('img');
