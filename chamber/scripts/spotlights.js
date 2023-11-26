@@ -36,6 +36,7 @@ function chooseRandomArray(number, array) {
 }
 
 function styleMember(member) {
+
     let section = document.createElement('section');
     let name = document.createElement('h3');
     let address = document.createElement('p');
@@ -47,7 +48,7 @@ function styleMember(member) {
         
     address.textContent = `Address: ${member.address}`;
     phone.textContent = `Phone: ${member.phone}`;
-    url.textContent = member.name;
+    url.textContent = member.name + addIconLV(member.membershipLV, member);
     url.setAttribute('href', member.url);
     url.setAttribute('target', '_blank');
     url.setAttribute('class', 'dark-light1');
@@ -63,6 +64,14 @@ function styleMember(member) {
     section.appendChild(notes);
 
     spotlightsElement.appendChild(section);
+}
+
+function addIconLV(membershipLV, member) {
+    if (membershipLV === 'Gold') {
+        return '🥇';
+    } else if (membershipLV === 'Silver'){
+        return '🥈';
+    }
 }
 
 getMembers();
