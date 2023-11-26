@@ -27,11 +27,20 @@ function combineMembers(array1, array2) {
 }
 
 function chooseRandomArray(number, array) {
+    if (number > array.length) {
+        console.error('Not enought items');
+        return [];
+    };
+
+    let copyArray = [...array];
     let randomArray = [];
+    
     for (let i=0; i<number; i++) {
-        randomIndex = Math.floor(Math.random() * array.length);
-        randomArray.push(array[randomIndex]);
+        const randomIndex = Math.floor(Math.random() * copyArray.length);
+        randomArray.push(copyArray[randomIndex]);
+        copyArray.splice(randomIndex, 1);
     }
+
     return randomArray;
 }
 
