@@ -41,6 +41,7 @@ function styleMember(member) {
     let name = document.createElement('h3');
     let address = document.createElement('p');
     let phone = document.createElement('p');
+    let membership = document.createElement('p');
     let url = document.createElement('a');
     let image = document.createElement('img');
     let notes = document.createElement('p');                        
@@ -48,6 +49,7 @@ function styleMember(member) {
         
     address.textContent = `Address: ${member.address}`;
     phone.textContent = `Phone: ${member.phone}`;
+    membership.textContent = `Membership Level: ${member.membershipLV}`;
     url.textContent = member.name + addIconLV(member.membershipLV, member);
     url.setAttribute('href', member.url);
     url.setAttribute('target', '_blank');
@@ -61,6 +63,7 @@ function styleMember(member) {
     section.appendChild(name);
     section.appendChild(address);
     section.appendChild(phone);
+    section.appendChild(membership);
     section.appendChild(notes);
 
     spotlightsElement.appendChild(section);
