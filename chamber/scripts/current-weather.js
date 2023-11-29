@@ -35,8 +35,8 @@ async function apiFetchCurrent() {
     }
     catch(error) {
         console.log(error);
-    }
-}
+    };
+};
 
 function windChillFormula(temp, windspeed) {
     return 35.74 + (0.6215 * temp) - (35.75 * Math.pow(windspeed, 0.16)) + (0.4275 * temp * Math.pow(windspeed, 0.16));
@@ -46,7 +46,7 @@ function showWindChill(temp, windspeed) {
     if (temp > 51 || windspeed <= 3) {
         windChill.textContent = "N/A";
     } else {
-        let result = windChillFormula(floatT, floatV);
+        let result = windChillFormula(temp, windspeed);
         windChill.textContent = result.toFixed(2);
         
     }
