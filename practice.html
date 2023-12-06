@@ -1,73 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Min-ting Chuang">
-    <meta name="description" content="This is the homepage of Kaohsiung Chamber of Commerce">
-    <meta property="og:title" content="Kaohsiung Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://lisamandarin.github.io/wdd230/chamber">
-    <meta property="og:image" content="https://lisamandarin.github.io/wdd230/chamber/images/kcc-logo320.png">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/medium.css">
-    <link rel="stylesheet" href="styles/larger.css">
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <title>Kaohsiung Chamber of Commerce</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Buttons</title>
+  <link rel="stylesheet" href="styles/practice.css">
 </head>
 <body>
-    <div id="mode">
-        🕶️
-    </div>
-    <header id="headerContainer">
-        <img src="images/logo.webp" alt="logo of Kaohsiung">
-        <h1>Kaohsiung Chamber of Commerce</h1>
-    </header>
-    <nav>
-        <button id="menu" aria-label="menu button"></button>
-        <ul class="navigation">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-            <li><a href="#">About US</a></li>
-            <li><a href="#">Directory</a></li>
-            <li><a href="#">Announcement</a></li>
-            <li><a href="join.html">Join Us</a></li>
-        </ul>
-    </nav>
-    <main id="directory-container">
-        <div class="directory-menu">
-            <button>⏹️Grid</button>
-            <button>📄List</button>
-        </div>
-        <article class="directory-grid">
-			<section>
-				<img src="chamber/images/logos/日月光.webp" alt="日月光">
-				<h2><a href="https://ase.aseglobal.com/ch/about-ase/">日月光</a></h2>
-				<p>Address: 高雄市楠梓區經三路26號</p>
-				<p>Telephone: 07-3617131</p>
-				<p>Membership Level: Gold Membership</p>
-				<p>ADVANCED SEMICONDUCTOR ENGINEERING, INC.</p>
-			</section>
-        </article>
-    </main>
-    <footer>
-        <div id="chamber-info">
-            <img src="images/logo.webp" alt="Kaohsiung logo">
-            <h2>Kaohsiung Chamber of Commerce</h2>
-            <p id="address">110 Renren Rd. Jinfu District, Kaohsiung, Taiwan, R.O.C. 52314</p>
-            <p id="telephone">+(886)7-215-7834</p>
-        </div>
-        <div id="author-info">
-            <p class="text" id="copyright">&copy;<span id="year"></span> Kaohsiung Chamber of Commerce</p>
-            <p class="text" id="name"> | Min-ting Chuang</p>
-            <p class="text" id="course"> | WDD 230 Project</p>
-            <p class="text" id="lastModified"></p>
-        </div>
-    </footer>
-    <script src="scripts/getdate.js"></script>
-    <script src="scripts/ham-menu.js"></script>
-    <script src="scripts/dark-mode.js"></script>
-    <!-- <script src="scripts/members.js"></script> -->
+  <input type="checkbox" id="check" class="toggle">
+  <label for="check">Checked?</label>
 </body>
 </html>
