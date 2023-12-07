@@ -1,19 +1,41 @@
 @media (max-width: 800px) {
+    #contact {
+        min-height: 54px;
+        display: flex;
+        align-items: center;
+    }
+    #contact li {
+        font-size: 0.8rem;
+    }
 
-    .container {
-        width: 95%;
+    #contact svg {
+        min-width: 0.8rem;
+        min-height: 0.8rem;
+    }
+
+    #sub-header {
+        min-height: 54px;
+    }
+
+    #social-media {
+        gap: 3vw;
+    }
+    #social-media svg {
+        min-width: 2rem;
+        min-height: 2rem;
     }
 
     #menu-icon {
         display: block;
         margin-left: auto;
-        font-size: 6vw;
+        font-size: 3rem;
         cursor: pointer;
     }
 
     #menu-close-button {
         display: block;
     }
+
     #sub-header nav {
         position: fixed;
         top: calc(6vw + 10px);
@@ -23,6 +45,7 @@
         background-color: white;
         transform: translateX(-100%);
         transition: 0.35s transform ease;
+        width: auto;
     }
 
     #sub-header nav.open-menu {
@@ -37,5 +60,11 @@
         font-size: 1.5rem;
     }
 
-    
+    #dark-mode {
+        width: auto;
+    }
+
+    .container {
+        width: 95%;
+    }
 }

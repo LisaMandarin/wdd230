@@ -38,24 +38,23 @@
 
     /* header setting */
 #alert {
+    display: flex;
     background-color: var(--color-red);
     color: white;
     padding: 15px;
-    font-family: var(--text-font);
     font-size: 1.2rem;
     text-align: center;
-    position: relative;
 }
 
 #alert p {
     margin: 0;
 }
 #alert button {
-    position: absolute;
-    top: 20%;
-    right: 10px;
     font-size: 1.2rem;
-
+    margin-left: auto;
+    width: 25px;
+    height: 25px;
+    padding: 0;
 }
 
 .hidden {
@@ -109,7 +108,7 @@
 #social-media {
     display: flex;
     align-items: center;
-    gap: 1vw;
+    gap: 2vw;
     width: 40%;
     padding-left: 1.3vw;
 }

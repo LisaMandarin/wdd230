@@ -50,3 +50,16 @@ input[type="checkbox"].toggle:checked +label::after {
     transform: translateX(100%);
 }
 
+@media (max-width: 800px) {
+    input[type="checkbox"].toggle + label::before {
+        width: 3.6em;
+        height: 2em;
+    }
+    
+    input[type="checkbox"].toggle + label::after {
+        width: 1.5em;
+        height: 1.5em;
+        left:0.3em;
+    }
+
+}
