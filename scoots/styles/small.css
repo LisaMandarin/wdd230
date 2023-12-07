@@ -1,5 +1,66 @@
 @media (max-width: 400px) {
-    * {
-        
+    #alert {
+        flex-direction: column;
+    }
+    #contact ul {
+        flex-direction: column;
+    }
+
+    #contact li {
+        font-size: 1rem;
+        padding: 15px;
+    }
+    #contact img {
+        width: 50px;
+    }
+
+    #contact svg {
+        min-width: 1.5rem;
+        min-height: 1.5rem;
+    }
+    #contact p {
+        display: inline;
+    }
+
+    #sub-header {
+        flex-direction: column;
+    }
+
+    #social-media {
+        flex-direction: column;
+    }
+
+    #dark-mode {
+        padding: 15px;
+    }
+
+    #menu-icon {
+        position: fixed;
+        top: 0px;
+        right: 12px;
+    }
+
+    #homepage-weather {
+        grid-template-columns: 1fr;
+    }
+
+    .homepage-date-weather {
+        grid-template-columns: 1fr;
+    }
+
+    .homepage-date-weather p {
+        grid-column: 1/2;
+    }
+
+    .homepage-date-weather img {
+        grid-column: 1/2;
+    }
+    
+    footer {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    #location2 {
+        grid-column: 1/2;
     }
 }
