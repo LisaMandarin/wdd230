@@ -129,6 +129,10 @@
     font-size: 5vw;
 }
 
+#menu-close-button {
+    display: none;
+}
+
 #dark-mode {
     width: 10%;
 }

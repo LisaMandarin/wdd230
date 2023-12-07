@@ -8,12 +8,34 @@
         display: block;
         margin-left: auto;
         font-size: 6vw;
+        cursor: pointer;
     }
 
+    #menu-close-button {
+        display: block;
+    }
     #sub-header nav {
-        display: none;
+        position: fixed;
+        top: calc(6vw + 10px);
+        left: 0;
+        bottom: 0;
+        z-index: 9999;
+        background-color: white;
+        transform: translateX(-100%);
+        transition: 0.35s transform ease;
     }
 
+    #sub-header nav.open-menu {
+        transform: translateX(0);
+    }
+
+    #sub-header nav ul {
+        flex-direction: column;
+    }
+    
+    #sub-header nav ul li {
+        font-size: 1.5rem;
+    }
 
     
 }
