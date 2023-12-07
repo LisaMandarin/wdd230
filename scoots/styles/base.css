@@ -35,7 +35,8 @@
     background-color: var(--color-grassGreen);
 }
 /* ----------------------------------------------------------------------------- */
-/* header setting */
+
+    /* header setting */
 #alert {
     background-color: var(--color-red);
     color: white;
@@ -114,14 +115,18 @@
 }
 
 #social-media svg{
-    width: 5vh;
-    height: 5vh;
+    display: block;
+    width: 4vw;
+    height: 4vw;
 }
 
 #sub-header nav {
     width: 50%;
-    display: flex;
-    align-items: center;
+}
+
+#menu-icon {
+    display: none;
+    font-size: 5vw;
 }
 
 #dark-mode {
@@ -131,7 +136,7 @@
 #sub-header nav ul{
     display: flex;
     list-style: none;
-    /* justify-content: center; */
+    justify-content: space-between;
     padding-inline-start: 0;
     margin: 0;
 }
@@ -140,6 +145,8 @@
     border: .5px solid var(--color-darkGreen);
     padding: 10px 20px;
     font-size: 2vw;
+    flex-grow: 1;
+    text-align: center;
 }
 
 #sub-header nav ul li:not(:first-child) {
@@ -224,12 +231,14 @@ footer {
 
 #homepage-types {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
     gap: 2vw;
 }
 #homepage-types div {
     width: 33%;
+    min-width: 200px;
     flex: 1;
     text-align: center;
     border: 1px solid var(--color-red);
@@ -237,19 +246,6 @@ footer {
     background-color: var(--color-beige);
     border-radius: 25px;
 }
-
-/* #homepage-types a {
-    text-decoration: none;
-    color: inherit;
-} */
-
-/* #homepage-types a:visited {
-    color: inherit;
-} */
-
-/* #homepage-types a:hover {
-    text-decoration: underline;
-} */
 
 #homepage-types div:hover {
     box-shadow: 0px 0px 10px var(--color-red);
@@ -325,3 +321,5 @@ footer {
     margin: 0;
     padding-left: 5px;
 }
+
+

@@ -18,6 +18,7 @@ input[type="checkbox"] + label {
     display: flex;
     position: relative;
     align-items: center;
+    justify-content: flex-end;
 }
 
 input[type="checkbox"].toggle {
@@ -41,7 +42,7 @@ input[type="checkbox"].toggle + label::after {
     background-color: var(--color-beige);
     border-radius: 1em;
     position: absolute;
-    left: .1em;
+    left: 1.1em;
     transition: transform 200ms ease-in-out;
 }
 

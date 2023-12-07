@@ -1,0 +1,19 @@
+@media (max-width: 800px) {
+
+    .container {
+        width: 95%;
+    }
+
+    #menu-icon {
+        display: block;
+        margin-left: auto;
+        font-size: 6vw;
+    }
+
+    #sub-header nav {
+        display: none;
+    }
+
+
+    
+}
