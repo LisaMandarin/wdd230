@@ -340,7 +340,7 @@ footer {
 }
 
 .rentals-card {
-    border: 1px solid var(--color-red);
+    border: 1px solid var(--color-beige);
     padding: 10px 10px 10px 10px;
     border-radius: 20px;
     min-width: 360px;
