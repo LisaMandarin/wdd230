@@ -1,4 +1,4 @@
-const url = 'https://lisamandarin.github.io/wdd230/scoots/data/rentals.json';
+const url = 'https://lisamandarin.github.io/wdd230/scoots/data/vehicles.json';
 const container = document.querySelector('#rentals-description')
 
 async function getData() {
