@@ -230,6 +230,7 @@ footer {
     background-color: var(--color-red);
     border-radius: 25px;
     padding: 25px;
+    opacity: .7;
 }
 
 #homepage-types {
