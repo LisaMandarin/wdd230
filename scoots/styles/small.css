@@ -75,4 +75,19 @@
     #location2 {
         grid-column: 1/2;
     }
+
+    /* ----------------------------------------------------------------------------- */
+    /* rentals.html setting; */
+    .rentals-card {
+        min-width: 280px;
+        max-width: 380px;
+    }
+
+    .rentals-card h2, .rentals-card p{
+        justify-content: flex-start;
+    }
+    
+    .rentals-card > div {
+        grid-template-columns: 1fr;
+    }
 }

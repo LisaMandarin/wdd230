@@ -36,28 +36,8 @@
 }
 /* ----------------------------------------------------------------------------- */
 
-    /* header setting */
-#alert {
-    display: flex;
-    background-color: var(--color-red);
-    color: white;
-    padding: 15px;
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-#alert p {
-    margin: 0;
-}
-#alert button {
-    font-size: 1.2rem;
-    margin-left: auto;
-    width: 25px;
-    height: 25px;
-    padding: 0;
-}
-
-#alert.hidden {
+/* header setting */
+#menu-icon-small-screen {
     display: none;
 }
 
@@ -326,4 +306,60 @@ footer {
     padding-left: 5px;
 }
 
+/* ----------------------------------------------------------------------------- */
+/* rental.html setting */
+#tag-container {
+    display: flex;
+    gap: 5px;
+}
+
+.tag {
+    background-color: #BC4749;
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+
+#rentals-description {
+    border: 1px solid var(--color-red);
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#rentals-description section > h1 {
+    text-align: center;
+}
+
+#rentals-description section section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 15px;
+}
+
+.rentals-card {
+    border: 1px solid var(--color-red);
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+    min-width: 360px;
+    max-width: 470px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.rentals-card h2, .rentals-card > p {
+    display: flex;
+    justify-content: center;
+}
+
+.rentals-card > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.rentals-card > div p:first-child {
+    text-decoration: underline;
+}
 

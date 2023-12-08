@@ -1,0 +1,1 @@
+const url = 'https://lisamandarin.github.io/wdd230/scoots/data/rentals.json';

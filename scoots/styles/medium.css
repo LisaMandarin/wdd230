@@ -67,4 +67,17 @@
     .container {
         width: 95%;
     }
+
+    /* rentals.html setting */
+
+    #rentals-description {
+        padding: 10px;
+    }
+
+    #rentals-description section section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
 }
