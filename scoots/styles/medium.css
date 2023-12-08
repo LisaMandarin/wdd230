@@ -38,7 +38,7 @@
 
     #sub-header nav {
         position: fixed;
-        top: calc(6vw + 10px);
+        top: 0;
         left: 0;
         bottom: 0;
         z-index: 9999;

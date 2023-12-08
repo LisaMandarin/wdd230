@@ -35,9 +35,21 @@
     }
 
     #menu-icon {
+        display: none;
+    }
+    #menu-icon-small-screen {
         position: fixed;
+        font-size: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background-color: #BC4749;
+        color: white;
         top: 0px;
-        right: 12px;
+        right: 0px;
+        width: 30px;
+        height: 30px;
     }
 
     #homepage-weather {
