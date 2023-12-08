@@ -1,72 +1,68 @@
 {
-    "vehicles" : 
-    [
+    "vehicles" : [
         {
-            "type": {
-                "Scooters": [
-                    {
-                        "name": "Honda Metropolitan (49cc)",
-                        "number": 1,
-                        "resv-half": 20,
-                        "resv-full": 30,
-                        "walk-half": 25,
-                        "walk-full": 35
-                    },
-                    {
-                        "name": "Honda Dio (110cc)",
-                        "number": 2,
-                        "resv-half": 30,
-                        "resv-full": 40,
-                        "walk-half": 35,
-                        "walk-full": 45
-                    },
-                    {
-                        "name": "Honda PCX150 (149cc)",
-                        "number": 2,
-                        "resv-half": 40,
-                        "resv-full": 50,
-                        "walk-half": 45,
-                        "walk-full": 55
-                    }
-                ]
-            }
+            "type": "Scooters",
+            "description": [
+                {
+                    "name": "Honda Metropolitan (49cc)",
+                    "number": 1,
+                    "resv-half": 20,
+                    "resv-full": 30,
+                    "walk-half": 25,
+                    "walk-full": 35
+                },
+                {
+                    "name": "Honda Dio (110cc)",
+                    "number": 2,
+                    "resv-half": 30,
+                    "resv-full": 40,
+                    "walk-half": 35,
+                    "walk-full": 45
+                },
+                {
+                    "name": "Honda PCX150 (149cc)",
+                    "number": 2,
+                    "resv-half": 40,
+                    "resv-full": 50,
+                    "walk-half": 45,
+                    "walk-full": 55
+                }
+            ]
         },
         {
-            "type": {
-                "ATVs": [
-                    {
-                        "name": "Honda Pioneer 1000",
-                        "number": 4,
-                        "resv-half": 50,
-                        "resv-full": 70,
-                        "walk-half": 60,
-                        "walk-full": 80
-                    }
-                ]
-            }
+            "type": "ATVs",
+            "description": [
+                {
+                    "name": "Honda Pioneer 1000",
+                    "number": 4,
+                    "resv-half": 50,
+                    "resv-full": 70,
+                    "walk-half": 60,
+                    "walk-full": 80
+                }
+            ]
         },
         {
-            "type": {
-                "Jeeps": [
-                    {
-                        "name": "Jeeo Wrangler - 4 door manuel with A/C",
-                        "number": 5,
-                        "resv-half": 70,
-                        "resv-full": 100,
-                        "walk-half": 85,
-                        "walk-full": 125
-                    },
-                    {
-                        "name": "Jeep Wrangler - 2 door - open air - manuel",
-                        "number": 4,
-                        "resv-half": 60,
-                        "resv-full": 85,
-                        "walk-half": 70,
-                        "walk-full": 90
-                    }
-                ]
-            }
+            "type": "Jeeps",
+            "description": [
+                {
+                    "name": "Jeeo Wrangler - 4 door manuel with A/C",
+                    "number": 5,
+                    "resv-half": 70,
+                    "resv-full": 100,
+                    "walk-half": 85,
+                    "walk-full": 125
+                },
+                {
+                    "name": "Jeep Wrangler - 2 door - open air - manuel",
+                    "number": 4,
+                    "resv-half": 60,
+                    "resv-full": 85,
+                    "walk-half": 70,
+                    "walk-full": 90
+                }
+            ]
         }
-        
     ]
+    
 }

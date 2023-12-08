@@ -6,6 +6,9 @@ async function getData() {
     if (response.ok) {
         const data = await response.json();
         console.log(data);
+        data.forEach((item) => { 
+            console.log(item);
+        });
     }
 }
 
