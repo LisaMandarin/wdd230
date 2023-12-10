@@ -100,4 +100,33 @@
     .rentals-card > div {
         grid-template-columns: 1fr;
     }
+
+    /* ----------------------------------------------------------------------------- */
+    /* reservation.html setting */
+    #reservation-container form {
+        grid-template-columns: 1fr;
+    }
+
+    #reservation-agreement {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    #reservation-vehicle-info {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    #reservation-personal-info {
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    #reservation-submit {
+        grid-column: 1/2;
+        grid-row: 4/5;
+        width: 80%;
+        height: auto;
+        padding: 10px;
+        font-size: 1rem;
+    }
 }
