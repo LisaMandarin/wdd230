@@ -413,7 +413,7 @@ footer {
 #reservation-vehicle-info .single-option input {
     margin: 0 10px 0 0;
 }
-#form-date {
+#form-date, #form-quantity {
     display: block;
 }
 
