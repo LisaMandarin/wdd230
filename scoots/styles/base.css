@@ -327,6 +327,8 @@ footer {
     padding: 20px;
     display: grid;
     grid-template-columns: 1fr;
+    overflow: scroll;
+    max-height: 500px;
 }
 
 #rentals-description section > h1 {

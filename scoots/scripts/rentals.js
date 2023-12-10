@@ -34,6 +34,7 @@
 
     function formatType(sectionElement, type) {
         const typeElement = document.createElement('h1');
+        typeElement.setAttribute('id', type);
         typeElement.textContent = type;
         sectionElement.appendChild(typeElement);
     }
