@@ -20,6 +20,15 @@ input[type="checkbox"] + label {
     align-items: center;
     justify-content: flex-end;
 }
+@media (max-width:400px) {
+    input[type="checkbox"] + label {
+        font-size: 3vw;
+    }
+    #dark-mode svg {
+        width: 30px;
+        height: 30px;
+    }
+}
 
 input[type="checkbox"].toggle {
     position: absolute;
