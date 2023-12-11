@@ -98,4 +98,24 @@
         grid-column: 2/3;
         grid-row: 1/4;
     } */
+    .store {
+        grid-template-columns: 1fr;
+    }
+    .store h2 {
+        grid-column: auto;
+    }
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .info p {
+        grid-column: 1/2;
+    }
+    .info img {
+        grid-column: 2/3;
+        grid-row: 1/4;
+    }
+    .map iframe {
+        height: 300px;
+    }
 }
