@@ -81,4 +81,21 @@
         gap: 15px;
     }
 
+    /* ----------------------------------------------------------------------------- */
+    /* contact.html setting */
+    /* .store {
+        grid-template-columns: 1fr;
+    }
+    .info {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .info p {
+        grid-column: 1/2;
+    }
+    .info img {
+        grid-column: 2/3;
+        grid-row: 1/4;
+    } */
 }
