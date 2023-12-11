@@ -116,13 +116,17 @@
                 <legend class="title">Vehicle Information</legend>
                 <label class="boundary">Pick-up Date<span class="required">*</span><input type="date" name="date" id="form-date" required></label>
                 <div>Period<span class="required">*</span></div>
-                <label class="single-option"><input type="radio" name="period" id="form-halfDay" value="halfDay">Half fullDay</label>
+                <label class="single-option"><input type="radio" name="period" id="form-halfDay" value="halfDay">Half Day</label>
                 <label class="single-option boundary"><input type="radio" name="period" id="form-fullDay" value="fullDay">Half Day</label>
                 <div>Rentl Type<span class="required">*</span></div>
-                <label class="single-option"><input type="radio" name="type" id="form-scooter" value="scooter">Scooter</label>
-                <label class="single-option"><input type="radio" name="type" id="form-atv" value="atv">ATV</label>
-                <label class="single-option boundary"><input type="radio" name="type" id="form-jeep" value="jeep">Jeep</label>
+                <label class="single-option"><input type="radio" name="type" value="honda-metro-scooter">Honda Metro Scooter</label>
+                <label class="single-option"><input type="radio" name="type" value="honda-dio-scooter">Honda Dio Scooter</label>
+                <label class="single-option"><input type="radio" name="type" value="honda-pcx150-scooter">Honda PCX150 Scooter</label>
+                <label class="single-option"><input type="radio" name="type" value="honda-pioneer-atv">Honda Pioneer ATV</label>
+                <label class="single-option"><input type="radio" name="type" value="jeep-wrangler-4door">Jeep Wrangler - 4 door with a/c</label>
+                <label class="single-option boundary"><input type="radio" name="type" value="jeep-wrangler-2door">Jeep Wrangler - 2 door</label>
                 <label>Quantity (between 1 and 5)<span class="required">*</span><input type="number" name="quantity" id="form-quantity" min="1" max="5" required></label>
+                <div id="quantity-alert"></div>
                 
             </fieldset>
             <fieldset id="reservation-personal-info">
@@ -154,6 +158,7 @@
     </footer>
     <script src="scripts/dark-mode.js"></script>
     <script src="scripts/open-menu.js"></script>
+    <script src="scripts/reservation.js"></script>
     <script src="scripts/getYear.js"></script>
 </body>
 </html>

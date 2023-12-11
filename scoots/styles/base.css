@@ -367,6 +367,14 @@ footer {
 
 /* ----------------------------------------------------------------------------- */
 /* reservation.html setting */
+input:required {
+    border-left: 4px solid red;
+}
+
+input:required:valid {
+    border-left: 2px solid black;
+}
+
 #reservation-container form {
     display: grid;
     grid-template-columns: 1fr 1fr;
