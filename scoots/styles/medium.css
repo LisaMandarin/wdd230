@@ -83,21 +83,6 @@
 
     /* ----------------------------------------------------------------------------- */
     /* contact.html setting */
-    /* .store {
-        grid-template-columns: 1fr;
-    }
-    .info {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .info p {
-        grid-column: 1/2;
-    }
-    .info img {
-        grid-column: 2/3;
-        grid-row: 1/4;
-    } */
     .store {
         grid-template-columns: 1fr;
     }
@@ -117,5 +102,11 @@
     }
     .map iframe {
         height: 300px;
+    }
+    #contact-form section{
+        grid-template-columns: 1fr;
+    }
+    #contact-form section > div {
+        display: none;
     }
 }
