@@ -9,7 +9,8 @@
                     "resvHalf": "20",
                     "resvFull": "30",
                     "walkHalf": "25",
-                    "walkFull": "35"
+                    "walkFull": "35",
+                    "image": "images/honda-metropolitan.webp"
                 },
                 {
                     "name": "Honda Dio (110cc)",
@@ -17,7 +18,8 @@
                     "resvHalf": "30",
                     "resvFull": "40",
                     "walkHalf": "35",
-                    "walkFull": "45"
+                    "walkFull": "45",
+                    "image": "images/honda-dio.webp"
                 },
                 {
                     "name": "Honda PCX150 (149cc)",
@@ -25,7 +27,8 @@
                     "resvHalf": "40",
                     "resvFull": "50",
                     "walkHalf": "45",
-                    "walkFull": "55"
+                    "walkFull": "55",
+                    "image": "images/honda-pcx150.webp"
                 }
             ]
         },
@@ -38,7 +41,8 @@
                     "resvHalf": "50",
                     "resvFull": "70",
                     "walkHalf": "60",
-                    "walkFull": "80"
+                    "walkFull": "80",
+                    "image": "images/honda-pioneer1000.webp"
                 }
             ]
         },
@@ -46,12 +50,13 @@
             "type": "Jeeps",
             "description": [
                 {
-                    "name": "Jeeo Wrangler - 4 door manuel with A/C",
+                    "name": "Jeep Wrangler - 4 door manuel with A/C",
                     "number": "5",
                     "resvHalf": "70",
                     "resvFull": "100",
                     "walkHalf": "85",
-                    "walkFull": "125"
+                    "walkFull": "125",
+                    "image": "images/jeep-wrangler-4door.webp"
                 },
                 {
                     "name": "Jeep Wrangler - 2 door - open air - manuel",
@@ -59,7 +64,8 @@
                     "resvHalf": "60",
                     "resvFull": "85",
                     "walkHalf": "70",
-                    "walkFull": "90"
+                    "walkFull": "90",
+                    "image": "images/jeep-wrangler-2door.webp"
                 }
             ]
         }
