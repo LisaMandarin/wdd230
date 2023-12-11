@@ -461,26 +461,11 @@ footer {
 
 /* ----------------------------------------------------------------------------- */
 /* contact.html setting */
-/* .store {
-    display: grid;
-    grid-template-columns: 60% 1fr;
-}
-.map {
-    display: flex;
-    justify-content: center;
-    align-items:flex-start;
-    padding: 5px;
-}
-.map img {
-    width: 100%;
-}
-
-.info img {
-    width: 100%;
-} */
 #contact-description {
     border: 1px solid var(--color-red);
     padding: 20px;
+    overflow: scroll;
+    height: 500px;
 }
 .store {
     display: grid;
