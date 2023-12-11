@@ -533,3 +533,33 @@ input:required:valid {
     border: 1px solid grey;
     padding: 10px;
 }
+
+/* ----------------------------------------------------------------------------- */
+/* thankyou.html setting */
+
+#image-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#image-container picture {
+    width: 100%;
+    height: auto;
+}
+
+#image-container img {
+    width: 100%;
+    height: auto;
+}
+
+#thankyou-text {
+    font-size: 3rem;
+    font-family: var(--title-font);
+    font-weight: 900;
+    z-index: 999;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
