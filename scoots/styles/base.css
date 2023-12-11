@@ -365,6 +365,9 @@ footer {
     justify-content: center;
 }
 
+.rentals-card >img {
+    width: 100%;
+}
 .rentals-card > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
