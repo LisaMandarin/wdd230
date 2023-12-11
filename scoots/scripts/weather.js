@@ -7,6 +7,7 @@ const homepageCurrentWeather = document.querySelector('#homepage-current-weather
 const todayMonthElement = document.querySelector('#today-month');
 const todayDayElement = document.querySelector('#today-day');
 const todayWeekdayElement = document.querySelector('#today-weekday');
+const todayWeatherElement = document.querySelector('#today-weather');
 
 
 async function getCurrentWeather() {
@@ -14,7 +15,6 @@ async function getCurrentWeather() {
         const response = await fetch(currentWeatherURL);
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
 
             // set readable time
             const utcTimestamp = data.dt;
@@ -26,14 +26,6 @@ async function getCurrentWeather() {
             todayDayElement.textContent = todayDay;
             todayWeekdayElement.textContent = todayWeekday;
 
-            // console.log(date.toLocaleString('en-US', {
-            //     month: 'long',
-            //     day: 'numeric',
-            //     weekday: 'long',
-            //     hour: 'numeric',
-            //     minute: 'numeric'
-            // }))
-
             // set temperature, humidity, description and icon
             let temp = data.main.temp;
             temp = Math.round(temp);
@@ -41,6 +33,9 @@ async function getCurrentWeather() {
             let description = data.weather[0].description;
             let icon = data.weather[0].icon;
             let iconsrc = `https://openweathermap.org/img/w/${icon}.png`;
+            let weather = data.weather[0].main;
+            
+            todayWeatherElement.textContent = weather;
             currentTemperature.textContent = temp;
             currentHumidity.textContent = humidity;
             currentDescription.textContent = description;
@@ -71,13 +66,15 @@ const homepageTomorrowWeather = document.querySelector('#homepage-tomorrow-weath
 const tomorrowMonthElement = document.querySelector('#tomorrow-month');
 const tomorrowDayElement = document.querySelector('#tomorrow-day');
 const tomorrowWeekdayElement = document.querySelector('#tomorrow-weekday');
+const tomorrowWeatherElement = document.querySelector('#tomorrow-weather');
 
 async function getTomorrowWeather() {
     try {
         const response = await fetch(tomorrowWeatherURL);
         if (response.ok) {
             const data = await response.json();
-            const tomorrow = data.list[8];
+            
+            const tomorrow = data.list[7];
 
             //Set readable time
             const utcTimestamp = tomorrow.dt;
@@ -88,22 +85,16 @@ async function getTomorrowWeather() {
             tomorrowMonthElement.textContent = tomorrowMonth;
             tomorrowDayElement.textContent = tomorrowDay;
             tomorrowWeekdayElement.textContent = tomorrowWeekday;
-            
-            // console.log(date.toLocaleString('en-US', {
-            //     month: 'long',
-            //     day: 'numeric',
-            //     weekday: 'long',
-            //     hour: 'numeric',
-            //     minute: 'numeric'
-            // }))
 
             // set temperature, humidity, description and icon
             let temp = tomorrow.main.temp;
             temp = Math.round(temp);
             let humidity = tomorrow.main.humidity;
+            let weather = tomorrow.weather[0].main;
             let description = tomorrow.weather[0].description;
             let icon = tomorrow.weather[0].icon;
             let iconsrc = `https://openweathermap.org/img/w/${icon}.png`;
+            tomorrowWeatherElement.textContent = weather;
             tomorrowTemperature.textContent = temp;
             tomorrowHumidity.textContent = humidity;
             tomorrowDescription.textContent = description;

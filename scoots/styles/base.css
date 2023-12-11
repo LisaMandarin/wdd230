@@ -267,7 +267,7 @@ footer {
     grid-column: 1/2;
     grid-row: span 4;
 }
-.homepage-date-weather p {
+.homepage-date-weather > p {
     grid-column: 2/3;
 }
 .homepage-date-weather img {
@@ -282,7 +282,7 @@ footer {
     border-radius: 15px 15px 0 0;
     border: 1px solid var(--color-red);
 }
-.homepage-date-weather h1 {
+.homepage-date-weather h2 {
     margin: 0;
     padding: 15px 15px 0px 15px;
     text-align: center;
@@ -290,6 +290,13 @@ footer {
     border-right: 1px solid var(--color-red);
     color: black;
     background-color: white;
+}
+#today-weekday, #tomorrow-weekday {
+    border-left: 1px solid var(--color-red);
+    border-right: 1px solid var(--color-red);
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: center;
 }
 .homepage-date-weather div p:last-child {
     background-color: white;
