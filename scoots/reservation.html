@@ -8,7 +8,8 @@
     <meta property="og:title" content="Scoots Motor Scooter Rental Services">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lisamandarin.github.io/wdd230/scoots/">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="https://lisamandarin.github.io/wdd230/scoots/images/logo.webp">
+    <meta property="og:description" content="Scoots Motor Scooter Rental Services, located on the island of Cozumel off the coast of Mexico, provide online reservation of motor scooters, ATVs and jeeps.">
     <link rel="stylesheet" type="text/css" href="styles/normalize.css">   
     <link rel="stylesheet" type="text/css" href="styles/base.css">
     <link rel="stylesheet" href="styles/medium.css">
@@ -110,28 +111,38 @@
                     <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
                     <li>Rentals may be returned to either physical location.</li>
                 </ul>
-                <label for="agree"><input type="checkbox" name="agree" id="form-agree" required> I have read the rental services and agreements above.</label>
+                <label for="form-agree"><input type="checkbox" name="agree" id="form-agree" required> I have read the rental services and agreements above.</label>
             </fieldset>
             <fieldset id="reservation-vehicle-info">
                 <legend class="title">Vehicle Information</legend>
                 <label class="boundary">Pick-up Date<span class="required">*</span><input type="date" name="date" id="form-date" required></label>
-                <div>Period<span class="required">*</span></div>
-                <label class="single-option"><input type="radio" name="period" id="form-halfDay" value="halfDay">Half Day</label>
-                <label class="single-option boundary"><input type="radio" name="period" id="form-fullDay" value="fullDay">Full Day</label>
-                <div>Rentl Type<span class="required">*</span></div>
-                <label class="single-option"><input type="radio" name="type" value="honda-metro-scooter">Honda Metro Scooter</label>
-                <label class="single-option"><input type="radio" name="type" value="honda-dio-scooter">Honda Dio Scooter</label>
-                <label class="single-option"><input type="radio" name="type" value="honda-pcx150-scooter">Honda PCX150 Scooter</label>
-                <label class="single-option"><input type="radio" name="type" value="honda-pioneer-atv">Honda Pioneer ATV</label>
-                <label class="single-option"><input type="radio" name="type" value="jeep-wrangler-4door">Jeep Wrangler - 4 door with a/c</label>
-                <label class="single-option boundary"><input type="radio" name="type" value="jeep-wrangler-2door">Jeep Wrangler - 2 door</label>
+                <label>Period<span class="required">*</span>
+                    <select required class="boundary" id="form-period">
+                        <option value="">Please Select</option>
+                        <option value="halfDay">Half Day</option>
+                        <option value="fullDay">Full Day</option>
+
+                    </select>
+                </label>
+                <label>Rental Type<span class="required">*</span>
+                    <select name="rental-type" required class="boundary" id="form-type">
+                        <option value="">Please Select</option>
+                        <option value="honda-metro-scooter">Honda Metro Scooter</option>
+                        <option value="honda-dio-scooter">Honda Dio Scooter</option>
+                        <option value="honda-pcx150-scooter">Honda PCX150 Scooter</option>
+                        <option value="honda-pioneer-atv">Honda Pioneer ATV</option>
+                        <option value="jeep-wrangler-4door">Jeep Wrangler - 4 door with a/c</option>
+                        <option value="jeep-wrangler-2door">Jeep Wrangler - 2 door</option>
+                    </select>
+                </label>
+
                 <label>Quantity (between 1 and 5)<span class="required">*</span><input type="number" name="quantity" id="form-quantity" min="1" max="5" required></label>
                 <div id="quantity-alert"></div>
                 
             </fieldset>
             <fieldset id="reservation-personal-info">
                 <legend class="title">Personal Information</legend>
-                <label>Name<span class="required">*</span><input type="type="text name="name" id="form-name" required></label>
+                <label>Name<span class="required">*</span><input type="text" name="name" id="form-name" required></label>
                 <label>Phone Number<span class="required">*</span><input type="tel" name="phone" id="form-phone" required></label>
                 <label>E-mail<span class="required">*</span><input type="email" name="email" id="form-email" required></label>
                 <label>Home State or Country<input type="text" name="country" id="form-country"></label>
@@ -158,7 +169,7 @@
     </footer>
     <script src="scripts/dark-mode.js"></script>
     <script src="scripts/open-menu.js"></script>
-    <script src="scripts/reservation.js"></script>
+    <script src="scripts/reservation.js" defer></script>
     <script src="scripts/getYear.js"></script>
 </body>
 </html>

@@ -436,8 +436,10 @@ input:required:valid {
 #reservation-vehicle-info .single-option input {
     margin: 0 10px 0 0;
 }
-#form-date, #form-quantity {
+#form-date, #form-period, #form-type, #form-quantity {
     display: block;
+    width: 100%;
+    padding: 5px;
 }
 
 #reservation-personal-info {
