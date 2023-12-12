@@ -456,8 +456,7 @@ input:required:valid {
 }
 
 #form-comment {
-    overflow: scroll;
-    height: 150px;
+    width: 100%;
 }
 #reservation-submit {
     grid-column: 1/-1;
@@ -512,7 +511,8 @@ input:required:valid {
     width: 100%;
 }
 #form-message {
-    height: 100px;
+    display: block;
+    width: 100%;
 }
 #contact-form fieldset div {
     display: flex;
